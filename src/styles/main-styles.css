@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+h3 {
+  margin: 4px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h4 {
+  margin: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+strong {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+span {
+  font-family: "EB Garamond", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.download-button {
+  border-radius: 32px;
+  padding: 16px;
+  background-color: var(--font-orange);
+  color: var(--font-blue);
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  font-family: "Montserrat", sans-serif;
+  position: sticky;
+  top: 20;
+}

@@ -1,0 +1,72 @@
+div[class^="element"] {
+  display: grid;
+  border-top: solid var(--black) 2px;
+  border-bottom: solid var(--black) 2px;
+  grid-template-columns: 100%;
+  grid-template-rows:
+    [row-1] 3fr
+    [row-2] 1fr
+    [row-3] 2fr
+    [row-4] 1fr
+    [row-5] 1fr;
+}
+
+div[class^="row-element"] {
+  display: flex;
+  align-items: center;
+}
+
+.row-element-1 {
+  grid-row: row-1;
+  justify-content: space-around;
+}
+
+.row-element-2 {
+  grid-row: row-2;
+  justify-content: space-evenly;
+  border-top: solid var(--black) 2px;
+  border-bottom: solid var(--black) 2px;
+}
+
+.row-element-3 {
+  grid-row: row-3;
+  display: grid !important;
+  column-gap: 2px;
+  align-content: center;
+  grid-template-columns:
+    [col-left] 1fr
+    [col-mid] 1fr
+    [col-right] 1fr;
+  grid-template-rows:
+    [row-1] 1fr
+    [row-2] 1fr;
+}
+
+.row-element-4 {
+  grid-row: row-4;
+  justify-content: space-evenly;
+  border-top: solid var(--black) 2px;
+  border-bottom: solid var(--black) 2px;
+}
+
+.row-element-5 {
+  grid-row: row-5;
+  justify-content: space-evenly;
+}
+
+.sub-cell-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 100%;
+}
+
+.title-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
