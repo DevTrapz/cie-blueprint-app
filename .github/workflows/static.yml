@@ -34,8 +34,8 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Use a stable Node.js version
-          cache: 'npm' # or 'yarn', based on what you use
+          node-version: '20'
+          cache: 'npm'
           
       # 4. Install dependencies
       - name: Install dependencies
@@ -53,7 +53,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './build' # This is the directory created by 'npm run build'
+          path: './dist' # This is the directory created by 'npm run build'
 
       # 8. Deploy the artifact to GitHub Pages
       - name: Deploy to GitHub Pages
