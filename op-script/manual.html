@@ -1,0 +1,59 @@
+<!-- This code is manually entered on the ontraport page -->
+<style>
+  .hidden {
+    display: none;
+  }
+</style>
+<script>
+  const opDataBlockId = "oea9438f9d9eb";
+  const blueprintBaseUrl = "https://devtrapz.github.io/cie-blueprint-app/";
+
+  document.addEventListener("DOMContentLoaded", loadBlueprint);
+
+  function loadBlueprint() {
+    const rawData = extractData(opDataBlockId);
+    const data = validateData(rawData);
+
+    const encodedData = encodeURIComponent(data);
+    const url = blueprintBaseUrl + "?payload=" + encodedData;
+
+    console.log(url);
+
+    createIframe(url);
+  }
+
+  function extractData(opDataBlockId) {
+    const dataBlock = document.getElementById(opDataBlockId);
+    const dataElement = dataBlock?.getElementsByClassName("opt-text-wrapper");
+    const rawData = dataElement?.[0].textContent;
+
+    return rawData
+      ? rawData
+      : console.error(
+          "Ontraport is missing the data structure. Block id:" + opDataBlockId
+        );
+  }
+  function validateData(rawData) {
+    const regexRemoveSpaces = /\s+(?=(?:(?:[^"]*"){2})*[^"]*$)|/;
+    const regexRemoveNBSP = /\u00A0/g;
+    const dataJSON = rawData
+      .replace(regexRemoveNBSP, "")
+      .replace(regexRemoveSpaces, "");
+
+    const isValidJSON = Boolean(JSON.parse(dataJSON));
+
+    return isValidJSON
+      ? dataJSON
+      : console.error("Data structure is not valid JSON");
+  }
+  function createIframe(url) {
+    const iframe = document.createElement("iframe");
+
+    iframe.src = url;
+    iframe.title = "Blueprint";
+    iframe.width = "1550px";
+    iframe.height = "1400px";
+
+    document.body.prepend(iframe);
+  }
+</script>
