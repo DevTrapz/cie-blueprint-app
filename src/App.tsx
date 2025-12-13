@@ -15,16 +15,7 @@ import ElementArea from "./components/ElementArea.tsx";
 import getData from "./utils/get-data.ts";
 
 function App() {
-  const opDataBlockId = "oea9438f9d9eb";
-  const data: BlueprintData | void = getData(opDataBlockId);
-
-  if (!data) {
-    console.error(
-      `Data structure is missing, check if block id: ${opDataBlockId} exists`
-    );
-    return;
-  }
-
+  const data: BlueprintData = getData();
   return (
     <>
       <ButtonDownload
