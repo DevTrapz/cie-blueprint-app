@@ -53,6 +53,9 @@ export interface Module_6 {
   internal_connetion: string
   internal_grounding: string
   result: string
+}
+
+export interface Module_6_Hard_Code {
   mental_spin_hard_coded: string
   spiritually_influenced_hard_coded: string
   mental_action_hard_coded: string

@@ -1,5 +1,5 @@
 import { sampleData, hardCodedData } from "../../data/data"
-import type { BlueprintData } from "../types/BlueprintData.types";
+import type { BlueprintModel } from "../types/BlueprintData.types";
 
 export default function getData() {
   const queryString = window.location.search;
@@ -7,9 +7,9 @@ export default function getData() {
   const urlParams = new URLSearchParams(queryString);
   const payload = urlParams.get("payload");
 
-  if (!payload) return sampleData
+  if (!payload) return insertHardCodedData(sampleData)
 
-  const data: BlueprintData = insertHardCodedData(JSON.parse(payload));
+  const data: BlueprintModel = insertHardCodedData(JSON.parse(payload));
   return data
 }
 

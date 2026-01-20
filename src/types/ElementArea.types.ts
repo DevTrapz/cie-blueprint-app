@@ -1,4 +1,4 @@
-export interface ElementArea {
+export interface ElementAreaPayload {
   type: ElementTypes;
   position: ElementPositions;
   nap: string,
@@ -8,8 +8,6 @@ export interface ElementArea {
   guide: string,
   career: string,
   role: string,
-  description_hard_coded: string,
-  image_url_icon_hard_coded: string,
   words: {
     bottom_line: string,
     bottom_line_opposite: string,
@@ -18,6 +16,11 @@ export interface ElementArea {
     result: string,
     result_opposite: string
   }
+}
+
+export interface ElementAreaModel extends ElementAreaPayload {
+  description_hard_coded: string,
+  image_url_icon_hard_coded: string,
 }
 
 type ElementPositions = 'top-center' | 'top-right' | 'bottom-right' | 'bottom-center' | 'bottom-left' | 'top-left';

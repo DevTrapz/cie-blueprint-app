@@ -1,4 +1,4 @@
-import type { ElementArea as ElementData } from "../types/ElementArea.types";
+import type { ElementAreaModel as ElementData } from "../types/ElementArea.types";
 import "../styles/layout-element-area.css";
 interface props {
   element: ElementData;

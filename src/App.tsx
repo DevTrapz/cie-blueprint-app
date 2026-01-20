@@ -1,4 +1,4 @@
-import type { BlueprintData } from "./types/BlueprintData.types.ts";
+import type { BlueprintModel } from "./types/BlueprintData.types.ts";
 import {
   FillTopLeft,
   FillTopCenter,
@@ -15,7 +15,7 @@ import ElementArea from "./components/ElementArea.tsx";
 import getData from "./utils/get-data.ts";
 
 function App() {
-  const data: BlueprintData = getData();
+  const data: BlueprintModel = getData();
   return (
     <>
       <ButtonDownload
@@ -88,7 +88,7 @@ function App() {
 
 export default App;
 
-function renderElementAreas(data: BlueprintData) {
+function renderElementAreas(data: BlueprintModel) {
   return data.elements.map((element, index) => (
     <ElementArea key={index} element={element} />
   ));
