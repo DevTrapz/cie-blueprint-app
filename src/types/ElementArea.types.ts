@@ -10,17 +10,22 @@ export interface ElementAreaPayload {
   role: string,
   words: {
     bottom_line: string,
-    bottom_line_opposite: string,
     action_step: string,
-    action_step_opposite: string
     result: string,
-    result_opposite: string
   }
 }
 
 export interface ElementAreaModel extends ElementAreaPayload {
   description_hard_coded: string,
   image_url_icon_hard_coded: string,
+  words: {
+    conscious_trait: string,
+    unconscious_trait: string
+    attachment: string
+    bottom_line: string,
+    action_step: string,
+    result: string,
+  }
 }
 
 type ElementPositions = 'top-center' | 'top-right' | 'bottom-right' | 'bottom-center' | 'bottom-left' | 'top-left';

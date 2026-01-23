@@ -13,9 +13,13 @@ import {
 import { ButtonDownload } from "./components/ButtonDownload.tsx";
 import ElementArea from "./components/ElementArea.tsx";
 import getData from "./utils/get-data.ts";
+import { useMemo } from "react";
 
 function App() {
-  const data: BlueprintModel = getData();
+  const data: BlueprintModel = useMemo(() => {
+    return getData();
+  }, []);
+
   return (
     <>
       <ButtonDownload
@@ -41,6 +45,7 @@ function App() {
           module_5={data.module_5}
           module_6={data.module_6}
           module_7={data.module_7}
+          traits={data.traits}
         />
         <FillCenterRight module_6={data.module_6} />
         <FillBottomCenter module_7={data.module_7} />

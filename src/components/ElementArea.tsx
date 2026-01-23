@@ -28,13 +28,13 @@ export default function ElementArea({ element }: props) {
       </div>
       <div className={`row-element-3 font-13`}>
         <div className="sub-cell-element sub-cell-top-color font-strong">
-          {element.words.bottom_line_opposite}
+          {element.words.conscious_trait}
         </div>
         <div className="sub-cell-element sub-cell-top-color font-strong">
-          {element.words.action_step_opposite}
+          {element.words.unconscious_trait}
         </div>
         <div className="sub-cell-element sub-cell-top-color font-strong">
-          {element.words.result_opposite}
+          {element.words.attachment}
         </div>
         <div className="sub-cell-element sub-cell-left-color font-strong">
           {element.words.bottom_line}

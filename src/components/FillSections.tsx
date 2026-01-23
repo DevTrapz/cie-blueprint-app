@@ -5,10 +5,12 @@ import type {
   Module_4,
   Module_5,
   Module_6,
+  Module_6_Hard_Code,
   Module_7,
   Module_8,
   Module_9,
 } from "../types/Modules.types";
+import type { TraitWords } from "../types/TraitWords.types";
 
 interface TopLeftType {
   first_name: string;
@@ -91,7 +93,7 @@ export function FillTopCenter({ module_9 }: TopCenterType) {
 }
 
 interface TopRightType {
-  module_6: Module_6;
+  module_6: Module_6 & Module_6_Hard_Code;
 }
 export function FillTopRight({ module_6 }: TopRightType) {
   return (
@@ -113,7 +115,7 @@ export function FillTopRight({ module_6 }: TopRightType) {
 }
 
 interface CenterLeftType {
-  module_6: Module_6;
+  module_6: Module_6 & Module_6_Hard_Code;
 }
 export function FillCenterLeft({ module_6 }: CenterLeftType) {
   return (
@@ -155,6 +157,7 @@ interface CenterCenterType {
   module_5: Module_5;
   module_6: Module_6;
   module_7: Module_7;
+  traits: TraitWords;
 }
 export function FillCenterCenter({
   module_3,
@@ -162,6 +165,7 @@ export function FillCenterCenter({
   module_5,
   module_6,
   module_7,
+  traits,
 }: CenterCenterType) {
   return (
     <div className="fill-center-center background-primary">
@@ -175,13 +179,13 @@ export function FillCenterCenter({
         </div>
         <div className="center-center-sub-grid-3x2 background-black">
           <div className="sub-cell-element sub-cell-top-color">
-            {module_5.path_attachment}
+            {traits.core_conscious_trait}
           </div>
           <div className="sub-cell-element sub-cell-top-color">
-            {module_5.path_unconscious_trait}
+            {traits.core_unconscious_trait}
           </div>
           <div className="sub-cell-element sub-cell-top-color">
-            {module_5.path}
+            {traits.core_attachment}
           </div>
           <div className="sub-cell-element sub-cell-left-color">
             {module_4.core_truth}
@@ -219,7 +223,7 @@ export function FillCenterCenter({
 }
 
 interface CenterRightType {
-  module_6: Module_6;
+  module_6: Module_6 & Module_6_Hard_Code;
 }
 export function FillCenterRight({ module_6 }: CenterRightType) {
   return (

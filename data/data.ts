@@ -17,11 +17,8 @@ export const sampleData: BlueprintPayload = {
       career: "Coach",
       role: "Nurturer",
       words: {
-        bottom_line_opposite: "Energetic",
         bottom_line: "Exhausted",
         action_step: "Resting",
-        action_step_opposite: "Pushing",
-        result_opposite: "Vibrant",
         result: "Burnout"
       }
     },
@@ -36,11 +33,8 @@ export const sampleData: BlueprintPayload = {
       career: "Lead",
       role: "Ally",
       words: {
-        bottom_line_opposite: "Supported",
         bottom_line: "Alone",
         action_step: "Asking",
-        action_step_opposite: "Withdrawing",
-        result_opposite: "Connected",
         result: "Isolated"
       }
     },
@@ -55,11 +49,8 @@ export const sampleData: BlueprintPayload = {
       career: "Founder",
       role: "Provider",
       words: {
-        bottom_line_opposite: "Secure",
         bottom_line: "Anxious",
         action_step: "Investing",
-        action_step_opposite: "Hoarding",
-        result_opposite: "Freedom",
         result: "Lack"
       }
     },
@@ -74,11 +65,8 @@ export const sampleData: BlueprintPayload = {
       career: "Planner",
       role: "Organizer",
       words: {
-        bottom_line_opposite: "Present",
         bottom_line: "Rushed",
         action_step: "Prioritizing",
-        action_step_opposite: "Distraction",
-        result_opposite: "Productive",
         result: "Overwhelmed"
       }
     },
@@ -93,11 +81,8 @@ export const sampleData: BlueprintPayload = {
       career: "Mediator",
       role: "Partner",
       words: {
-        bottom_line_opposite: "Valued",
         bottom_line: "Unworthy",
         action_step: "Truth",
-        action_step_opposite: "Pleasing",
-        result_opposite: "Intimacy",
         result: "Resentment"
       }
     },
@@ -112,15 +97,35 @@ export const sampleData: BlueprintPayload = {
       career: "Teacher",
       role: "Guide",
       words: {
-        bottom_line_opposite: "Knowing",
         bottom_line: "Confused",
         action_step: "Stillness",
-        action_step_opposite: "Analyzing",
-        result_opposite: "Aligned",
         result: "Lost"
       }
     }
   ],
+  traits: {
+    core_conscious_trait: "[Core Conscious Trait]",
+    core_unconscious_trait: "[Core Unconscious Trait]",
+    core_attachment: "[Core Attachment DROPDOWN]",
+    top_left_conscious_trait: "[Top Left Conscious Trait]",
+    top_left_unconscious_trait: "[Top Left Unconscious Trait]",
+    top_left_attachment: "[Top Left Attachment DROPDOWN]",
+    top_center_conscious_trait: "[Top Middle Conscious Trait]",
+    top_center_unconscious_trait: "[Top Middle Unconscious Trait]",
+    top_center_attachment: "[Top Middle Attachment DROPDOWN]",
+    top_right_conscious_trait: "[Top Right Conscious Trait]",
+    top_right_unconscious_trait: "[Top Right Unconscious Trait]",
+    top_right_attachment: "[Top Right Attachment DROPDOWN]",
+    bottom_left_conscious_trait: "[Bottom Left Conscious Trait]",
+    bottom_left_unconscious_trait: "[Bottom Left Unconscious Trait]",
+    bottom_left_attachment: "[Bottom Left Attachment DROPDOWN]",
+    bottom_center_conscious_trait: "[Bottom Middle Conscious Trait]",
+    bottom_center_unconscious_trait: "[Bottom Middle Unconscious Trait]",
+    bottom_center_attachment: "[Bottom Middle Attachment DROPDOWN]",
+    bottom_right_conscious_trait: "[Bottom Right Conscious Trait]",
+    bottom_right_unconscious_trait: "[Bottom Right Unconscious Trait]",
+    bottom_right_attachment: "[Bottom Right Attachment DROPDOWN]",
+  },
   module_1: {
     truth: "Invisible",
     hurt: "Dismissed",

@@ -7,13 +7,13 @@ export default function getData() {
   const urlParams = new URLSearchParams(queryString);
   const payload = urlParams.get("payload");
 
-  if (!payload) return insertHardCodedData(sampleData)
+  if (!payload) return transformData(sampleData)
 
-  const data: BlueprintModel = insertHardCodedData(JSON.parse(payload));
+  const data: BlueprintModel = transformData(JSON.parse(payload));
   return data
 }
 
-function insertHardCodedData(data: any) {
+function transformData(data: any) {
   data["image_url_cie_logo_hard_coded"] = hardCodedData.image_url_cie_logo_hard_coded
   data["image_url_chakra_hard_coded"] = hardCodedData.image_url_chakra_hard_coded
   data["module_6"]["mental_spin_hard_coded"] = hardCodedData.module_6.mental_spin_hard_coded
@@ -29,11 +29,24 @@ function insertHardCodedData(data: any) {
   const elements = data.elements.map((element: any) => {
     const type = element.type;
     const hardCodedElementMatch: any = hardCodedData.elements.find((element) => (element.type == type));
+
+    const position = element.position.replace("-", "_")
+
+    const conscious_trait: string = data.traits[position + "_conscious_trait"]
+    const unconscious_trait: string = data.traits[position + "_unconscious_trait"]
+    const attachment: string = data.traits[position + "_attachment"]
     return {
       ...element,
       description_hard_coded: hardCodedElementMatch.description_hard_coded,
-      image_url_icon_hard_coded: hardCodedElementMatch.image_url_icon_hard_coded
+      image_url_icon_hard_coded: hardCodedElementMatch.image_url_icon_hard_coded,
+      words: {
+        ...element.words,
+        conscious_trait,
+        unconscious_trait,
+        attachment
+      }
     }
+
   });
 
   return { ...data, elements }
