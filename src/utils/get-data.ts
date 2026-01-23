@@ -1,4 +1,5 @@
 import { sampleData, hardCodedData } from "../../data/data"
+import type { ElementAreaPayload } from "../types/ElementArea.types";
 import type { BlueprintModel } from "../types/BlueprintData.types";
 
 export default function getData() {
@@ -26,17 +27,21 @@ function transformData(data: any) {
   data["module_6"]["external_step_1_hard_coded"] = hardCodedData.module_6.external_step_1_hard_coded
   data["module_6"]["external_step_2_hard_coded"] = hardCodedData.module_6.external_step_2_hard_coded
 
-  const elements = data.elements.map((element: any) => {
+  const elements = data.elements.map((element: ElementAreaPayload) => {
     const type = element.type;
     const hardCodedElementMatch: any = hardCodedData.elements.find((element) => (element.type == type));
 
-    const position = element.position.replace("-", "_")
+    const position = element.position.toLowerCase().replace(" ", "-")
 
-    const conscious_trait: string = data.traits[position + "_conscious_trait"]
-    const unconscious_trait: string = data.traits[position + "_unconscious_trait"]
-    const attachment: string = data.traits[position + "_attachment"]
+    const varPosition = position.replace("-", "_")
+
+    const conscious_trait: string = data.traits[varPosition + "_conscious_trait"]
+    const unconscious_trait: string = data.traits[varPosition + "_unconscious_trait"]
+    const attachment: string = data.traits[varPosition + "_attachment"]
+
     return {
       ...element,
+      position,
       description_hard_coded: hardCodedElementMatch.description_hard_coded,
       image_url_icon_hard_coded: hardCodedElementMatch.image_url_icon_hard_coded,
       words: {
