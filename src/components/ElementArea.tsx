@@ -10,13 +10,18 @@ export default function ElementArea({ element }: props) {
       <div
         className={`row-element-1 ${element.position}-element-primary flex-row-space-around`}
       >
-        <img src={element.image_url_icon_hard_coded} className="width-15"></img>
+        <div className="flex-col-center width-20">
+          <img
+            src={element.image_url_icon_hard_coded}
+            className="width-70"
+          ></img>
+        </div>
         <div className="title-element">
           <strong className="font-12">Mastered Element: </strong>
           <h3>{element.type}</h3>
           <strong className="font-12">{element.role}</strong>
         </div>
-        <span className="width-15 font-10-center">
+        <span className="width-20 font-14-center">
           {element.description_hard_coded}
         </span>
       </div>

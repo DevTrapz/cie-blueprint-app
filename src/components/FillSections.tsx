@@ -276,7 +276,9 @@ export function FillBottomLeft({
       <div className="bottom-left-sub-grid-2x1">
         <div className="flex-col-center-space-around bottom-left-element-primary">
           <span>Judgement 1:</span>
-          <span>Resisting Messages (Contrary Guide) / PAIN</span>
+          <span className="font-16">
+            Resisting Messages (Contrary Guide) / PAIN
+          </span>
         </div>
       </div>
       <div className="flex-row">
@@ -337,14 +339,14 @@ export function FillBottomCenter({ module_7 }: BottomCenterType) {
       <div className="flex-col-center-space-around background-primary bottom-center-element-primary">
         <span>Judgment 3:</span>
         <br />
-        <span>Crossing free will (longevity) / FEAR</span>
+        <span className="font-16">Crossing free will (longevity) / FEAR</span>
       </div>
       <div className="flex-col-mid-center background-primary bottom-center-element-secondary">
-        <span>{module_7.balanced_sensuality}</span>
-        <span>
+        <span className="font-16">{module_7.balanced_sensuality}</span>
+        <span className="font-16">
           date <i>thru</i> date
         </span>
-        <span>{module_7.alignment_statement_2}</span>
+        <span className="font-16">{module_7.alignment_statement_2}</span>
       </div>
     </div>
   );
@@ -363,7 +365,9 @@ export function FillBottomRight({
       <div className="bottom-right-sub-grid-2x1">
         <div className="flex-col-center-space-around bottom-right-element-primary">
           <span>Judgement 1:</span>
-          <span>Resisting Messages (Contrary Guide) / PAIN</span>
+          <span className="font-16">
+            Resisting Messages (Contrary Guide) / PAIN
+          </span>
         </div>
       </div>
       <div className="bottom-right-sub-grid-3x1 p-8 background-primary">
