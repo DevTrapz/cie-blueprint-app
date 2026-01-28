@@ -31,7 +31,7 @@
     return rawData
       ? rawData
       : console.error(
-          "Ontraport is missing the data structure. Block id:" + opDataBlockId
+          "Ontraport is missing the data structure. Block id:" + opDataBlockId,
         );
   }
   function validateData(rawData) {
@@ -39,7 +39,9 @@
     const regexRemoveNBSP = /\u00A0/g;
     const dataJSON = rawData
       .replace(regexRemoveNBSP, "")
-      .replace(regexRemoveSpaces, "");
+      .replace(regexRemoveSpaces, "")
+      .replace(/</g, "[")
+      .replace(/>/g, "]");
 
     const isValidJSON = Boolean(JSON.parse(dataJSON));
 
