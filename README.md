@@ -1,73 +1,48 @@
-# React + TypeScript + Vite
+# Document Generator 'Blueprint'
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **React/TypeScript** embedded application designed to generate "Blueprints"—customized documentation for students at the **Center for Intuitive Education**.
 
-Currently, two official plugins are available:
+### 🛠 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Framework:** React
+- **Language:** TypeScript
+- **Deployment:** GitHub Pages (Automated via GitHub Actions)
+- **Integration:** Iframe/Embedded
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 CI/CD & Deployment
 
-## Expanding the ESLint configuration
+The application is a publicly deployed static site utilizing **GitHub Pages** for cost-effective hosting.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Automation:** A CI/CD pipeline is configured via GitHub Actions to deploy updates automatically.
+- **Integration:** The application is consumed as an embedded service via a URL on the primary _Center for Intuitive Education_ student platform.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🏗 Data Pipeline & Architecture
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### The Embedded Design Choice
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+To leverage the existing student platform without the overhead of a custom backend, the application is embedded directly into the host environment. This approach was chosen to:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1.  Avoid the complexity of building a custom API.
+2.  Eliminate the need for secure, cross-platform authentication for data retrieval.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Data Transmission
+
+Student data is populated directly into the application via **URL Query Parameters**.
+
+> [!CAUTION]
+> **Technical Debt: URI Character Limits**
+> The application is currently approaching the standard browser limit for query parameters. Further expansion of the data schema poses a high risk of "414 Request-URI Too Long" errors, which would result in a total failure to render.
+
+---
+
+## 🛡 Security & IP Considerations
+
+- **Public Source Code:** This repository is public to facilitate the use of free GitHub Pages hosting.
+- **Proprietary Value:** The risk of Intellectual Property (IP) loss is categorized as **Low**. The application is highly specialized and requires proprietary data structures sourced exclusively from the host platform to function.
+- **Data Privacy:** By using query parameters, we avoid the need for persistent database storage for student data within this specific micro-service.
+
+---
