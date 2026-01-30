@@ -12,8 +12,7 @@ export default function ElementArea({ element }: props) {
     <>
       {element.type == "Blank" ? (
         <>
-          <div className="blank-element border-top"></div>
-          <div className="blank-element border-bottom"></div>
+          <div className={`element-${element.position} blank-element`}></div>
         </>
       ) : (
         <>
