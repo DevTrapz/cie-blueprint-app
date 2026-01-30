@@ -1,6 +1,6 @@
 export interface ElementAreaPayload {
   type: ElementTypes;
-  position: ElementPositions;
+  position: ElementPositions | "";
   nap: string,
   grand_parent: string,
   life_1: string,
