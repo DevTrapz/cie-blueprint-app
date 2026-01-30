@@ -27,32 +27,35 @@ function transformData(data: any) {
   data["module_6"]["external_step_1_hard_coded"] = hardCodedData.module_6.external_step_1_hard_coded
   data["module_6"]["external_step_2_hard_coded"] = hardCodedData.module_6.external_step_2_hard_coded
 
-  const cleansedElements = data.elements.map((element: ElementAreaPayload) => {
-    const type = element.type;
-    const hardCodedElementMatch: any = hardCodedData.elements.find((element) => (element.type == type));
+  const cleansedElements = data.elements
+    .filter((element: any) => (element.position != "")
+    )
+    .map((element: ElementAreaPayload) => {
+      const type = element.type;
+      const hardCodedElementMatch: any = hardCodedData.elements.find((element) => (element.type == type));
 
-    const position = element.position.toLowerCase().replace(" ", "-")
+      const position = element.position.toLowerCase().replace(" ", "-")
 
-    const varPosition = position.replace("-", "_")
+      const varPosition = position.replace("-", "_")
 
-    const conscious_trait: string = data.traits[varPosition + "_conscious_trait"]
-    const unconscious_trait: string = data.traits[varPosition + "_unconscious_trait"]
-    const attachment: string = data.traits[varPosition + "_attachment"]
+      const conscious_trait: string = data.traits[varPosition + "_conscious_trait"]
+      const unconscious_trait: string = data.traits[varPosition + "_unconscious_trait"]
+      const attachment: string = data.traits[varPosition + "_attachment"]
 
-    return {
-      ...element,
-      position,
-      description_hard_coded: hardCodedElementMatch.description_hard_coded,
-      image_url_icon_hard_coded: hardCodedElementMatch.image_url_icon_hard_coded,
-      words: {
-        ...element.words,
-        conscious_trait,
-        unconscious_trait,
-        attachment
+      return {
+        ...element,
+        position,
+        description_hard_coded: hardCodedElementMatch.description_hard_coded,
+        image_url_icon_hard_coded: hardCodedElementMatch.image_url_icon_hard_coded,
+        words: {
+          ...element.words,
+          conscious_trait,
+          unconscious_trait,
+          attachment
+        }
       }
-    }
 
-  });
+    });
 
   const availablePositions: ElementPositions[] = ['top-center', 'top-right', 'bottom-right', 'bottom-center', 'bottom-left', 'top-left']
   const definedPositions = cleansedElements.map((element: ElementAreaModel) => (element.position))
