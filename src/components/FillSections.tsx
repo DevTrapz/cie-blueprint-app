@@ -212,7 +212,7 @@ export function FillCenterCenter({
           {module_4.circuit.join(", ")}
         </span>
         <strong className="font-end">Coping Method: </strong>
-        <span className="font-blue-start-strong">Placehoder</span>
+        <span className="font-blue-start-strong">{module_5.method}</span>
       </div>
     </div>
   );
