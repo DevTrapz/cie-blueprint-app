@@ -152,10 +152,10 @@
   border-bottom: solid black 2px;
 }
 
-.center-center-sub-grid-2x6 {
+.center-center-sub-grid-2x5 {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   gap: 8px;
 }
 

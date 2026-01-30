@@ -198,14 +198,10 @@ export function FillCenterCenter({
           </div>
         </div>
       </div>
-      <div className="center-center-sub-grid-2x6 font-12 p-10">
+      <div className="center-center-sub-grid-2x5 font-12 p-10">
         <strong className="flex-row-end-center">Negativity:</strong>
         <span className="flex-row-start-center font-red-strong">
           {module_4.negativity}
-        </span>
-        <strong className="font-end">Method:</strong>
-        <span className="font-start">
-          <span className="font-blue-strong">{module_5.method}</span>
         </span>
         <strong className="font-end">Practice:</strong>
         <span className="font-blue-start-strong">{module_5.practice}</span>
