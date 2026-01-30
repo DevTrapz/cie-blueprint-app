@@ -1,5 +1,5 @@
 import { sampleData, hardCodedData } from "../../data/data"
-import type { ElementAreaPayload } from "../types/ElementArea.types";
+import type { ElementAreaPayload, ElementAreaModel, ElementAreaBlank, ElementPositions } from "../types/ElementArea.types";
 import type { BlueprintModel } from "../types/BlueprintData.types";
 
 export default function getData() {
@@ -27,7 +27,7 @@ function transformData(data: any) {
   data["module_6"]["external_step_1_hard_coded"] = hardCodedData.module_6.external_step_1_hard_coded
   data["module_6"]["external_step_2_hard_coded"] = hardCodedData.module_6.external_step_2_hard_coded
 
-  const elements = data.elements.map((element: ElementAreaPayload) => {
+  const cleansedElements = data.elements.map((element: ElementAreaPayload) => {
     const type = element.type;
     const hardCodedElementMatch: any = hardCodedData.elements.find((element) => (element.type == type));
 
@@ -53,6 +53,17 @@ function transformData(data: any) {
     }
 
   });
+
+  const availablePositions: ElementPositions[] = ['top-center', 'top-right', 'bottom-right', 'bottom-center', 'bottom-left', 'top-left']
+  const definedPositions = cleansedElements.map((element: ElementAreaModel) => (element.position))
+
+  const missingPositions = availablePositions.filter((availablePosition) => {
+    return !definedPositions.includes(availablePosition)
+  }
+  )
+  const fillElements: ElementAreaBlank[] = missingPositions.map((position) => ({ position, type: "Blank" }))
+
+  const elements: (ElementAreaModel | ElementAreaBlank)[] = [...cleansedElements, ...fillElements]
 
   return { ...data, elements }
 }

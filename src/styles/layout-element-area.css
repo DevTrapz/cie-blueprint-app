@@ -70,3 +70,7 @@ div[class^="row-element"] {
   justify-content: space-around;
   height: 100%;
 }
+
+.blank-element {
+  background-color: var(--primary);
+}

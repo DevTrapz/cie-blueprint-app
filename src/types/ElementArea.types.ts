@@ -28,5 +28,10 @@ export interface ElementAreaModel extends ElementAreaPayload {
   }
 }
 
-type ElementPositions = 'top-center' | 'top-right' | 'bottom-right' | 'bottom-center' | 'bottom-left' | 'top-left';
+export interface ElementAreaBlank {
+  position: ElementPositions
+  type: 'Blank'
+}
+
+export type ElementPositions = 'top-center' | 'top-right' | 'bottom-right' | 'bottom-center' | 'bottom-left' | 'top-left';
 type ElementTypes = 'Health' | 'Support' | 'Finance' | 'Time' | 'Relationship' | 'Wisdom';
