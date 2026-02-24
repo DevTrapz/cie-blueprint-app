@@ -1,7 +1,7 @@
 #blueprint-grid {
   display: grid;
-  width: 1500px;
-  height: 1200px;
+  width: 1496px;
+  height: 1195px;
   column-gap: 2px;
   grid-template-columns:
     [col-start] 1fr
@@ -163,7 +163,7 @@
 .margin-left,
 .margin-right {
   display: grid;
-  grid-template-rows: 752.5px;
+  grid-template-rows: 750.5px;
 }
 
 /* fill bottom left and right sub grid styles */
