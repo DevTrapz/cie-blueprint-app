@@ -15,12 +15,8 @@
     const rawData = extractData(opDataBlockId);
     const data = validateData(rawData);
 
-    const encodedData = encodeURIComponent(data);
-    const url = blueprintBaseUrl + "?payload=" + encodedData;
-
-    console.log(url);
-
-    createIframe(url);
+    const iframe = createIframe(url);
+    window.postMessage(data, blueprintBaseUrl);
   }
 
   function extractData(opDataBlockId) {
@@ -58,5 +54,6 @@
     iframe.height = "1400px";
 
     document.body.prepend(iframe);
+    return iframe;
   }
 </script>

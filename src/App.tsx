@@ -12,13 +12,11 @@ import {
 } from "./components/FillSections.tsx";
 import { ButtonDownload } from "./components/ButtonDownload.tsx";
 import ElementArea from "./components/ElementArea.tsx";
-import getData from "./utils/get-data.ts";
-import { useMemo } from "react";
+import useData from "./utils/get-data.ts";
 
 function App() {
-  const data: BlueprintModel = useMemo(() => {
-    return getData();
-  }, []);
+  const data = useData();
+  if (!data) return <></>;
 
   return (
     <>

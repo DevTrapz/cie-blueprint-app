@@ -1,20 +1,21 @@
-import { sampleData, hardCodedData } from "../../data/data"
+import { hardCodedData } from "../../data/data"
 import type { ElementAreaPayload, ElementAreaModel, ElementAreaBlank, ElementPositions } from "../types/ElementArea.types";
 import type { BlueprintModel } from "../types/BlueprintData.types";
+import { useState, useEffect } from "react"
 
-export default function getData() {
-  const queryString = window.location.search;
+export default function useData(): BlueprintModel | undefined {
+  const [data, setData] = useState<BlueprintModel | undefined>();
 
-  const urlParams = new URLSearchParams(queryString);
-  const payload = urlParams.get("payload");
+  useEffect(() => {
+    window.addEventListener('message', (e) => {
+      if (e.data) setData(transformData(e.data))
+    })
+  }, [])
 
-  if (!payload) return transformData(sampleData)
-
-  const data: BlueprintModel = transformData(JSON.parse(payload));
   return data
 }
 
-function transformData(data: any) {
+function transformData(data: any): BlueprintModel | undefined {
   data["image_url_cie_logo_hard_coded"] = hardCodedData.image_url_cie_logo_hard_coded
   data["image_url_chakra_hard_coded"] = hardCodedData.image_url_chakra_hard_coded
   data["module_6"]["mental_spin_hard_coded"] = hardCodedData.module_6.mental_spin_hard_coded
