@@ -171,9 +171,7 @@ export function FillCenterCenter({
     <div className="fill-center-center background-primary">
       <div className="center-center-sub-grid-1x2 background-black">
         <div className="flex-col-mid-center background-primary">
-          <span className="font-12">
-            date <i>thru</i> date
-          </span>
+          <span className="font-12">{module_7.core_date_range}</span>
           <h3 className="font-18">{module_3.role}</h3>
           <strong className="font-12">{module_5.life_purpose}</strong>
         </div>

@@ -75,6 +75,7 @@ export interface Module_7 {
   balanced_sensuality: string
   alignment_statement_3: string
   action_step: string
+  core_date_range: string
 }
 
 export interface Module_8 {
