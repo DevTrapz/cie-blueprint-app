@@ -76,6 +76,7 @@ export interface Module_7 {
   alignment_statement_3: string
   action_step: string
   core_date_range: string
+  bottom_center_date_range: string
 }
 
 export interface Module_8 {

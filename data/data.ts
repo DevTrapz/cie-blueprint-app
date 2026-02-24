@@ -190,7 +190,8 @@ export const sampleData: BlueprintPayload = {
     interal_block_right: "[M07 External Block (Right)]",
     alignment_statement_3: "[M07 Alignment Statement 3]",
     action_step: "Acceptance",
-    core_date_range: "date thru date"
+    core_date_range: "date thru date",
+    bottom_center_date_range: "date thru date"
   },
   module_8: {
     empath: "Absorption"

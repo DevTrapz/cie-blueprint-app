@@ -337,9 +337,7 @@ export function FillBottomCenter({ module_7 }: BottomCenterType) {
       </div>
       <div className="flex-col-mid-center background-primary bottom-center-element-secondary">
         <span className="font-16">{module_7.balanced_sensuality}</span>
-        <span className="font-16">
-          date <i>thru</i> date
-        </span>
+        <span className="font-16">{module_7.bottom_center_date_range}</span>
         <span className="font-16">{module_7.alignment_statement_2}</span>
       </div>
     </div>
