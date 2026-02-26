@@ -196,21 +196,89 @@ export function FillCenterCenter({
           </div>
         </div>
       </div>
-      <div className="center-center-sub-grid-2x5 font-12 p-10">
-        <strong className="flex-row-end-center">Negativity:</strong>
-        <span className="flex-row-start-center font-red-strong">
-          {module_4.negativity}
-        </span>
-        <strong className="font-end">Practice:</strong>
-        <span className="font-blue-start-strong">{module_5.practice}</span>
-        <strong className="font-end">Guide: </strong>
-        <span className="font-blue-start-strong">{module_4.guide}</span>
-        <strong className="font-end">Circut: </strong>
-        <span className="font-blue-start-strong">
-          {module_4.circuit.join(", ")}
-        </span>
-        <strong className="font-end">Coping Method: </strong>
-        <span className="font-blue-start-strong">{module_5.method}</span>
+      <div className="flex-column font-12 p-10" style={{ flexGrow: 0 }}>
+        <div className="m-8">
+          <strong
+            style={{
+              width: "125px",
+              display: "inline-block",
+              textAlign: "right",
+            }}
+          >
+            Negativity:
+          </strong>
+          <span className="font-red-strong" style={{ marginLeft: "12px" }}>
+            {module_4.negativity}
+          </span>
+        </div>
+        <div className="m-8">
+          <strong
+            style={{
+              width: "125px",
+              display: "inline-block",
+              textAlign: "right",
+            }}
+          >
+            Practice:
+          </strong>
+          <span
+            className="font-blue-start-strong"
+            style={{ marginLeft: "12px" }}
+          >
+            {module_5.practice}
+          </span>
+        </div>
+        <div className="m-8">
+          <strong
+            style={{
+              width: "125px",
+              display: "inline-block",
+              textAlign: "right",
+            }}
+          >
+            Guide:{" "}
+          </strong>
+          <span
+            className="font-blue-start-strong"
+            style={{ marginLeft: "12px" }}
+          >
+            {module_4.guide}
+          </span>
+        </div>
+        <div className="m-8">
+          <strong
+            style={{
+              width: "125px",
+              display: "inline-block",
+              textAlign: "right",
+            }}
+          >
+            Circut:{" "}
+          </strong>
+          <span
+            className="font-blue-start-strong"
+            style={{ marginLeft: "12px" }}
+          >
+            {module_4.circuit.join(", ")}
+          </span>
+        </div>
+        <div className="m-8" style={{ marginTop: "auto" }}>
+          <strong
+            style={{
+              width: "125px",
+              display: "inline-block",
+              textAlign: "right",
+            }}
+          >
+            Coping Method:{" "}
+          </strong>
+          <span
+            className="font-blue-start-strong"
+            style={{ marginLeft: "12px" }}
+          >
+            {module_5.method}
+          </span>
+        </div>
       </div>
     </div>
   );
@@ -338,7 +406,9 @@ export function FillBottomCenter({ module_7 }: BottomCenterType) {
       <div className="flex-col-mid-center background-primary bottom-center-element-secondary">
         <span className="font-16">{module_7.balanced_sensuality}</span>
         <span className="font-16">{module_7.bottom_center_date_range}</span>
-        <span className="font-16">{module_7.alignment_statement_2}</span>
+        <span className="font-16" style={{ textAlign: "center" }}>
+          {module_7.alignment_statement_2}
+        </span>
       </div>
     </div>
   );

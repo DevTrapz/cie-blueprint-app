@@ -115,14 +115,15 @@
 }
 
 .margin-left-rotate {
-  transform: rotate(-90deg) translate(-42.5%);
+  transform: rotate(-90deg) translate(-44.8%);
   text-wrap: nowrap;
   position: absolute;
+  width: 746.5px;
   transform-origin: 37.5px;
 }
 
 .margin-right-rotate {
-  transform: rotate(90deg) translate(-42.5%);
+  transform: rotate(90deg) translate(-44.8%);
   text-wrap: nowrap;
   position: absolute;
   transform-origin: 37.5px;
@@ -150,13 +151,6 @@
   column-gap: 2px;
   border-top: solid black 2px;
   border-bottom: solid black 2px;
-}
-
-.center-center-sub-grid-2x5 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(5, 1fr);
-  gap: 8px;
 }
 
 /* margin sub grid styles */
