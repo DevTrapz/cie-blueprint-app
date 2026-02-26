@@ -203,11 +203,15 @@ export function FillCenterCenter({
               width: "125px",
               display: "inline-block",
               textAlign: "right",
+              verticalAlign: "top",
             }}
           >
             Negativity:
           </strong>
-          <span className="font-red-strong" style={{ marginLeft: "12px" }}>
+          <span
+            className="font-red-strong"
+            style={{ marginLeft: "12px", display: "inline-block" }}
+          >
             {module_4.negativity}
           </span>
         </div>
@@ -217,13 +221,14 @@ export function FillCenterCenter({
               width: "125px",
               display: "inline-block",
               textAlign: "right",
+              verticalAlign: "top",
             }}
           >
             Practice:
           </strong>
           <span
             className="font-blue-start-strong"
-            style={{ marginLeft: "12px" }}
+            style={{ marginLeft: "12px", display: "inline-block" }}
           >
             {module_5.practice}
           </span>
@@ -234,13 +239,14 @@ export function FillCenterCenter({
               width: "125px",
               display: "inline-block",
               textAlign: "right",
+              verticalAlign: "top",
             }}
           >
             Guide:{" "}
           </strong>
           <span
             className="font-blue-start-strong"
-            style={{ marginLeft: "12px" }}
+            style={{ marginLeft: "12px", display: "inline-block" }}
           >
             {module_4.guide}
           </span>
@@ -251,13 +257,19 @@ export function FillCenterCenter({
               width: "125px",
               display: "inline-block",
               textAlign: "right",
+              verticalAlign: "top",
             }}
           >
             Circut:{" "}
           </strong>
           <span
             className="font-blue-start-strong"
-            style={{ marginLeft: "12px" }}
+            style={{
+              marginLeft: "12px",
+              display: "inline-block",
+              width: "65%",
+              verticalAlign: "top",
+            }}
           >
             {module_4.circuit.join(", ")}
           </span>
@@ -274,7 +286,7 @@ export function FillCenterCenter({
           </strong>
           <span
             className="font-blue-start-strong"
-            style={{ marginLeft: "12px" }}
+            style={{ marginLeft: "12px", display: "inline-block" }}
           >
             {module_5.method}
           </span>
