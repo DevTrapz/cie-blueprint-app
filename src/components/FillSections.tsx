@@ -277,45 +277,45 @@ export function FillBottomLeft({
       </div>
       <div className="flex-row">
         <div className="flex-col font-13 width-70">
-          <span className="p-8">
+          <span className="p-4">
             <span className="font-strong">Integration: </span>
             <span className="font-blue-strong">{module_2.integration}</span>
           </span>
-          <span className="p-8">
+          <span className="p-4">
             <span className="font-strong">Old Belief: </span>
             <span className="font-blue-strong">{module_6.old_belief}</span>
           </span>
-          <span className="p-8">
+          <span className="p-4">
             <span className="font-strong">Lesson Learned: </span>
             <span className="font-blue-strong">{module_6.lesson_learned}</span>
           </span>
-          <span className="p-8">
+          <span className="p-4">
             <span className="font-strong">Ego: </span>
             <span className="font-blue-strong">{module_6.ego}</span>
           </span>
-          <span className="p-8">
+          <span className="p-4">
             <span className="font-strong">Positive Ego Statement: </span>
-            <span>{module_6.ego_statement}</span>
+            <span className="font-14">{module_6.ego_statement}</span>
           </span>
-          <span className="p-8 flex-item-end">
+          <span className="p-4 flex-item-end">
             <span className="font-strong">Empath Sensitive: </span>
             <span className="font-blue-strong">{module_8.empath}</span>
           </span>
         </div>
         <div className="flex-col font-13 width-30">
-          <span className="p-8">
+          <span className="p-4">
             <span className="font-red-strong">T</span>ruth:{" "}
             <span className="font-blue-strong">{module_1.truth}</span>
           </span>
-          <span className="p-8">
+          <span className="p-4">
             <span className="font-red-strong">H</span>urt:{" "}
             <span className="font-blue-strong">{module_1.hurt}</span>
           </span>
-          <span className="p-8">
+          <span className="p-4">
             <span className="font-red-strong">A</span>nger:{" "}
             <span className="font-blue-strong">{module_1.anger}</span>
           </span>
-          <span className="p-8">
+          <span className="p-4">
             <span className="font-red-strong">N</span>umb:{" "}
             <span className="font-blue-strong">{module_1.numb}</span>
           </span>

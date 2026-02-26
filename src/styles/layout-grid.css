@@ -115,14 +115,14 @@
 }
 
 .margin-left-rotate {
-  transform: rotate(-90deg) translate(-25%);
+  transform: rotate(-90deg) translate(-42.5%);
   text-wrap: nowrap;
   position: absolute;
   transform-origin: 37.5px;
 }
 
 .margin-right-rotate {
-  transform: rotate(90deg) translate(-25%);
+  transform: rotate(90deg) translate(-42.5%);
   text-wrap: nowrap;
   position: absolute;
   transform-origin: 37.5px;
