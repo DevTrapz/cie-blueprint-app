@@ -7,7 +7,7 @@
 </style>
 <script>
   const opDataBlockId = "oea9438f9d9eb";
-  const blueprintBaseUrl = "https://devtrapz.github.io/cie-blueprint-app/";
+  const blueprintURL = "https://devtrapz.github.io/cie-blueprint-app/";
 
   document.addEventListener("DOMContentLoaded", loadBlueprint);
 
@@ -15,8 +15,10 @@
     const rawData = extractData(opDataBlockId);
     const data = validateData(rawData);
 
-    const iframe = createIframe(url);
-    window.postMessage(data, blueprintBaseUrl);
+    const iframe = createIframe(blueprintURL);
+    iframe.addEventListener("load", () => {
+      iframe.contentWindow.postMessage(data, blueprintURL);
+    });
   }
 
   function extractData(opDataBlockId) {
@@ -39,10 +41,11 @@
       .replace(/</g, "[")
       .replace(/>/g, "]");
 
-    const isValidJSON = Boolean(JSON.parse(dataJSON));
+    const data = JSON.parse(dataJSON);
+    const isValidJSON = Boolean(data);
 
     return isValidJSON
-      ? dataJSON
+      ? data
       : console.error("Data structure is not valid JSON");
   }
   function createIframe(url) {
