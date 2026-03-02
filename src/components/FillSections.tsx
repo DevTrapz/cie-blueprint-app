@@ -210,7 +210,11 @@ export function FillCenterCenter({
           </strong>
           <span
             className="font-red-strong"
-            style={{ marginLeft: "12px", display: "inline-block" }}
+            style={{
+              marginLeft: "12px",
+              display: "inline-block",
+              width: "65%",
+            }}
           >
             {module_4.negativity}
           </span>
@@ -228,7 +232,11 @@ export function FillCenterCenter({
           </strong>
           <span
             className="font-blue-start-strong"
-            style={{ marginLeft: "12px", display: "inline-block" }}
+            style={{
+              marginLeft: "12px",
+              display: "inline-block",
+              width: "65%",
+            }}
           >
             {module_5.practice}
           </span>
@@ -246,7 +254,11 @@ export function FillCenterCenter({
           </strong>
           <span
             className="font-blue-start-strong"
-            style={{ marginLeft: "12px", display: "inline-block" }}
+            style={{
+              marginLeft: "12px",
+              display: "inline-block",
+              width: "65%",
+            }}
           >
             {module_4.guide}
           </span>
@@ -286,7 +298,11 @@ export function FillCenterCenter({
           </strong>
           <span
             className="font-blue-start-strong"
-            style={{ marginLeft: "12px", display: "inline-block" }}
+            style={{
+              marginLeft: "12px",
+              display: "inline-block",
+              width: "65%",
+            }}
           >
             {module_5.method}
           </span>
