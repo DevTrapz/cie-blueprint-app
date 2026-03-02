@@ -31,11 +31,7 @@ To leverage the existing student platform without the overhead of a custom backe
 
 ### Data Transmission
 
-Student data is populated directly into the application via **URL Query Parameters**.
-
-> [!CAUTION]
-> **Technical Debt: URI Character Limits**
-> The application is currently approaching the standard browser limit for query parameters. Further expansion of the data schema poses a high risk of "414 Request-URI Too Long" errors, which would result in a total failure to render.
+Student data is populated directly into the application via **window.postMessage()**.
 
 ---
 
@@ -43,6 +39,5 @@ Student data is populated directly into the application via **URL Query Paramete
 
 - **Public Source Code:** This repository is public to facilitate the use of free GitHub Pages hosting.
 - **Proprietary Value:** The risk of Intellectual Property (IP) loss is categorized as **Low**. The application is highly specialized and requires proprietary data structures sourced exclusively from the host platform to function.
-- **Data Privacy:** By using query parameters, we avoid the need for persistent database storage for student data within this specific micro-service.
 
 ---
