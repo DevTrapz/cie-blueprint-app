@@ -203,6 +203,7 @@ export function FillCenterCenter({
               width: "125px",
               display: "inline-block",
               textAlign: "right",
+              marginTop: "2px",
               verticalAlign: "top",
             }}
           >
@@ -225,6 +226,7 @@ export function FillCenterCenter({
               width: "125px",
               display: "inline-block",
               textAlign: "right",
+              marginTop: "2px",
               verticalAlign: "top",
             }}
           >
@@ -247,6 +249,7 @@ export function FillCenterCenter({
               width: "125px",
               display: "inline-block",
               textAlign: "right",
+              marginTop: "2px",
               verticalAlign: "top",
             }}
           >
@@ -269,6 +272,7 @@ export function FillCenterCenter({
               width: "125px",
               display: "inline-block",
               textAlign: "right",
+              marginTop: "2px",
               verticalAlign: "top",
             }}
           >
@@ -286,12 +290,14 @@ export function FillCenterCenter({
             {module_4.circuit.join(", ")}
           </span>
         </div>
-        <div className="m-8" style={{ marginTop: "auto" }}>
+        <div className="m-8">
           <strong
             style={{
               width: "125px",
               display: "inline-block",
               textAlign: "right",
+              marginTop: "2px",
+              verticalAlign: "top",
             }}
           >
             Coping Method:{" "}
