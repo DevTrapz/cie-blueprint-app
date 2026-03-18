@@ -24,7 +24,7 @@
     }
 
     const iframe = createIframe(blueprintURL);
-    iframe.addEventListener("message", () => {
+    window.addEventListener("message", () => {
       iframe.contentWindow.postMessage(data, blueprintURL);
     });
   }
