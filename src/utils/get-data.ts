@@ -1,8 +1,8 @@
 import { hardCodedData } from "../../data/data"
 import type { ElementAreaPayload, ElementAreaModel, ElementAreaBlank, ElementPositions } from "../types/ElementArea.types";
 import type { BlueprintModel } from "../types/BlueprintData.types";
-import { useState, useEffect } from "react"
-
+import { useState, useEffect } from "react";
+import { sampleData } from "../../data/data";
 export default function useData(): BlueprintModel | undefined {
   const [data, setData] = useState<BlueprintModel | undefined>();
 
@@ -10,6 +10,12 @@ export default function useData(): BlueprintModel | undefined {
     window.addEventListener('message', (e) => {
       if (e.data) setData(transformData(e.data))
     })
+
+    if (import.meta.env.MODE === 'development') {
+      setData(transformData(sampleData));
+    } else {
+      window.parent.postMessage("ready", "*");
+    }
   }, [])
 
   return data

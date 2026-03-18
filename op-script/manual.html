@@ -13,27 +13,48 @@
 
   function loadBlueprint() {
     const rawData = extractData(opDataBlockId);
+    if (!rawData) {
+      console.error("Failed to extract raw data. Aborting blueprint load.");
+      return;
+    }
     const data = validateData(rawData);
+    if (!data) {
+      console.error("Failed to validate data. Aborting blueprint load.");
+      return;
+    }
 
     const iframe = createIframe(blueprintURL);
-    iframe.addEventListener("load", () => {
+    iframe.addEventListener("message", () => {
       iframe.contentWindow.postMessage(data, blueprintURL);
     });
   }
 
   function extractData(opDataBlockId) {
     const dataBlock = document.getElementById(opDataBlockId);
-    const dataElement = dataBlock?.getElementsByClassName("opt-text-wrapper");
-    const rawData = dataElement?.[0].textContent;
+    if (!dataBlock) {
+      console.error(
+        "Ontraport is missing the data block. Block id:" + opDataBlockId,
+      );
+      return null;
+    }
+    const dataElement = dataBlock.getElementsByClassName("opt-text-wrapper");
+    if (!dataElement || dataElement.length === 0) {
+      console.error(
+        "Ontraport is missing the data structure. Block id:" + opDataBlockId,
+      );
+      return null;
+    }
+    const rawData = dataElement[0].textContent;
 
-    return rawData
-      ? rawData
-      : console.error(
-          "Ontraport is missing the data structure. Block id:" + opDataBlockId,
-        );
+    return rawData;
   }
   function validateData(rawData) {
-    const regexRemoveSpaces = /\s+(?=(?:(?:[^"]*"){2})*[^"]*$)|/;
+    if (!rawData) {
+      console.error("Raw data is missing or empty.");
+      return null;
+    }
+
+    const regexRemoveSpaces = /\s+(?=(?:(?:[^\"]*\"){2})*[^\"]*$)|/;
     const regexRemoveNBSP = /\u00A0/g;
     const dataJSON = rawData
       .replace(regexRemoveNBSP, "")
@@ -41,12 +62,13 @@
       .replace(/</g, "[")
       .replace(/>/g, "]");
 
-    const data = JSON.parse(dataJSON);
-    const isValidJSON = Boolean(data);
-
-    return isValidJSON
-      ? data
-      : console.error("Data structure is not valid JSON");
+    try {
+      const data = JSON.parse(dataJSON);
+      return data;
+    } catch (error) {
+      console.error("Data structure is not valid JSON:", error);
+      return null;
+    }
   }
   function createIframe(url) {
     const iframe = document.createElement("iframe");
