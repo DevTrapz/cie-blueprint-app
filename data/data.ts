@@ -1,6 +1,6 @@
-import type { BlueprintPayload } from "../src/types/BlueprintData.types"
+import type { BlueprintModel } from "../src/types/BlueprintData.types"
 
-export const sampleData: BlueprintPayload = {
+export const sampleData: BlueprintModel = {
   first_name: "Andrew",
   last_name: "Apodaca",
   revision_date: "12-08-2025",
@@ -13,7 +13,7 @@ export const sampleData: BlueprintPayload = {
       grand_parent: "Resilience",
       life_1: "Vitality",
       life_2: "Movement",
-      guide: "Healer",
+      aspect_1: "Healer",
       career: "Coach",
       role: "Nurturer",
       words: {
@@ -29,8 +29,8 @@ export const sampleData: BlueprintPayload = {
       grand_parent: "Community",
       life_1: "Trust",
       life_2: "Bonding",
-      guide: "Mentor",
-      career: "Lead",
+      aspect_1: "Mentor",
+      aspect_2: "Lead",
       role: "Ally",
       words: {
         bottom_line: "Alone",
@@ -45,8 +45,8 @@ export const sampleData: BlueprintPayload = {
       grand_parent: "Stewardship",
       life_1: "Abundance",
       life_2: "Security",
-      guide: "Builder",
-      career: "Founder",
+      aspect_1: "Builder",
+      aspect_2: "Founder",
       role: "Provider",
       words: {
         bottom_line: "Anxious",
@@ -61,8 +61,8 @@ export const sampleData: BlueprintPayload = {
       grand_parent: "Presence",
       life_1: "Flow",
       life_2: "Patience",
-      guide: "Sage",
-      career: "Planner",
+      aspect_1: "Sage",
+      aspect_2: "Planner",
       role: "Organizer",
       words: {
         bottom_line: "Rushed",
@@ -77,8 +77,8 @@ export const sampleData: BlueprintPayload = {
       grand_parent: "Harmony",
       life_1: "Intimacy",
       life_2: "Boundaries",
-      guide: "Lover",
-      career: "Mediator",
+      aspect_1: "Lover",
+      aspect_2: "Mediator",
       role: "Partner",
       words: {
         bottom_line: "Unworthy",
@@ -93,8 +93,8 @@ export const sampleData: BlueprintPayload = {
       grand_parent: "Truth",
       life_1: "Intuition",
       life_2: "Clarity",
-      guide: "Visionary",
-      career: "Teacher",
+      aspect_1: "Visionary",
+      aspect_2: "Teacher",
       role: "Guide",
       words: {
         bottom_line: "Confused",
@@ -201,7 +201,7 @@ export const sampleData: BlueprintPayload = {
   }
 }
 
-export const hardCodedData = {
+export const hardCodedData: BlueprintModel = {
   image_url_cie_logo_hard_coded: "https://i.ontraport.com/219391.09f2add78ebd26dfb34b9704ce77b604.PNG",
   image_url_chakra_hard_coded: "https://i.ontraport.com/219391.45860f39281c2082bb779e883084a375.PNG",
   elements: [

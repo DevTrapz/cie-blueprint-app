@@ -38,8 +38,8 @@ export default function ElementArea({ element }: props) {
             <div
               className={`row-element-2 ${element.position}-element-secondary font-14`}
             >
-              <span className="font-montserrat-light">{element.guide}</span>
-              <span className="font-montserrat-light">{element.career}</span>
+              <span className="font-montserrat-light">{element.aspect_1}</span>
+              <span className="font-montserrat-light">{element.aspect_2}</span>
             </div>
             <div className={`row-element-3 font-13`}>
               <div className="sub-cell-element sub-cell-top-color font-strong">

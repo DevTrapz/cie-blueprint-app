@@ -5,8 +5,8 @@ export interface ElementAreaPayload {
   grand_parent: string,
   life_1: string,
   life_2: string,
-  guide: string,
-  career: string,
+  aspect_1: string,
+  aspect_2: string,
   role: string,
   words: {
     bottom_line: string,
