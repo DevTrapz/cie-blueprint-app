@@ -1,6 +1,6 @@
-import type { BlueprintModel } from "../src/types/BlueprintData.types"
+// import type { BlueprintModel } from "../src/types/BlueprintData.types"
 
-export const sampleData: BlueprintModel = {
+export const sampleData = {
   first_name: "Andrew",
   last_name: "Apodaca",
   revision_date: "12-08-2025",
@@ -201,7 +201,7 @@ export const sampleData: BlueprintModel = {
   }
 }
 
-export const hardCodedData: BlueprintModel = {
+export const hardCodedData = {
   image_url_cie_logo_hard_coded: "https://i.ontraport.com/219391.09f2add78ebd26dfb34b9704ce77b604.PNG",
   image_url_chakra_hard_coded: "https://i.ontraport.com/219391.45860f39281c2082bb779e883084a375.PNG",
   elements: [
