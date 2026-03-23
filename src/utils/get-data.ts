@@ -1,8 +1,9 @@
 import { hardCodedData } from "../../data/data"
-import type { ElementAreaPayload, ElementAreaModel, ElementAreaBlank, ElementPositions } from "../types/ElementArea.types";
+import type { ElementAreaPayload, ElementAreaModel, ElementAreaBlank, ElementPositions, ElementTypes } from "../types/ElementArea.types";
 import type { BlueprintModel } from "../types/BlueprintData.types";
 import { useState, useEffect } from "react";
 import { sampleData } from "../../data/data";
+import type { Module_3 } from "../types/Modules.types";
 export default function useData(): BlueprintModel | undefined {
   const [data, setData] = useState<BlueprintModel | undefined>();
 
@@ -33,12 +34,16 @@ function transformData(data: any): BlueprintModel | undefined {
   data["module_6"]["internal_step_2_hard_coded"] = hardCodedData.module_6.internal_step_2_hard_coded
   data["module_6"]["external_step_1_hard_coded"] = hardCodedData.module_6.external_step_1_hard_coded
   data["module_6"]["external_step_2_hard_coded"] = hardCodedData.module_6.external_step_2_hard_coded
+  data["module_core"]["role"] = findRole("Core", data["module_3"])
 
   const cleansedElements = data.elements
     .filter((element: any) => (element.position != "")
     )
     .map((element: ElementAreaPayload) => {
       const type = element.type;
+
+      const role = findRole(type, data["module_3"]);
+
       const hardCodedElementMatch: any = hardCodedData.elements.find((element) => (element.type == type));
 
       const position = element.position.toLowerCase().replace(" ", "-")
@@ -52,6 +57,7 @@ function transformData(data: any): BlueprintModel | undefined {
       return {
         ...element,
         position,
+        role,
         description_hard_coded: hardCodedElementMatch.description_hard_coded,
         image_url_icon_hard_coded: hardCodedElementMatch.image_url_icon_hard_coded,
         words: {
@@ -61,7 +67,6 @@ function transformData(data: any): BlueprintModel | undefined {
           attachment
         }
       }
-
     });
 
   const availablePositions: ElementPositions[] = ['top-center', 'top-right', 'bottom-right', 'bottom-center', 'bottom-left', 'top-left']
@@ -76,4 +81,15 @@ function transformData(data: any): BlueprintModel | undefined {
   const elements: (ElementAreaModel | ElementAreaBlank)[] = [...cleansedElements, ...fillElements]
 
   return { ...data, elements }
+}
+
+function findRole(type: ElementTypes, module_3: Module_3): string {
+  const area_key = Object.keys(module_3).find((key) =>
+    (module_3 as Record<string, any>)[key] === type
+  );
+
+  const role_key = area_key ? area_key.split("_").slice(0, -1).join("_") + "_role" : "";
+
+  const role = role_key ? (module_3 as Record<string, any>)[role_key] : "";
+  return role
 }

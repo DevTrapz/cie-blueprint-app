@@ -1,3 +1,5 @@
+import type { ElementTypes } from "./ElementArea.types"
+
 export interface Module_1 {
   truth: string
   hurt: string
@@ -10,13 +12,20 @@ export interface Module_2 {
 }
 
 export interface Module_3 {
-  provider: string
-  lover: string
-  friend: string
-  son_daughter: string
-  father_mother: string
-  husband_wife: string
-  man_woman: string
+  provider_role: string
+  lover_role: string
+  friend_role: string
+  son_daughter_role: string
+  father_mother_role: string
+  husband_wife_role: string
+  man_woman_role: string
+  provider_area: ElementTypes
+  lover_area: ElementTypes
+  friend_area: ElementTypes
+  son_daughter_area: ElementTypes
+  father_mother_area: ElementTypes
+  husband_wife_area: ElementTypes
+  man_woman_area: ElementTypes
   processed_emotion: string
   unprocessed_emotion: string
   dependent_pattern: string

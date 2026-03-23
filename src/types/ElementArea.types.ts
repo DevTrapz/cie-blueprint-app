@@ -7,7 +7,6 @@ export interface ElementAreaPayload {
   life_2: string,
   aspect_1: string,
   aspect_2: string,
-  role: string,
   words: {
     bottom_line: string,
     action_step: string,
@@ -16,6 +15,7 @@ export interface ElementAreaPayload {
 }
 
 export interface ElementAreaModel extends ElementAreaPayload {
+  role: string,
   description_hard_coded: string,
   image_url_icon_hard_coded: string,
   words: {
@@ -34,4 +34,4 @@ export interface ElementAreaBlank {
 }
 
 export type ElementPositions = 'top-center' | 'top-right' | 'bottom-right' | 'bottom-center' | 'bottom-left' | 'top-left';
-type ElementTypes = 'Health' | 'Support' | 'Finance' | 'Time' | 'Relationship' | 'Wisdom';
+export type ElementTypes = 'Health' | 'Support' | 'Finance' | 'Time' | 'Relationship' | 'Wisdom' | 'Core';

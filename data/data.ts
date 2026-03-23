@@ -15,7 +15,6 @@ export const sampleData = {
       life_2: "Movement",
       aspect_1: "Healer",
       career: "Coach",
-      role: "Nurturer",
       words: {
         bottom_line: "Exhausted",
         action_step: "Resting",
@@ -31,7 +30,6 @@ export const sampleData = {
       life_2: "Bonding",
       aspect_1: "Mentor",
       aspect_2: "Lead",
-      role: "Ally",
       words: {
         bottom_line: "Alone",
         action_step: "Asking",
@@ -47,7 +45,6 @@ export const sampleData = {
       life_2: "Security",
       aspect_1: "Builder",
       aspect_2: "Founder",
-      role: "Provider",
       words: {
         bottom_line: "Anxious",
         action_step: "Investing",
@@ -63,7 +60,6 @@ export const sampleData = {
       life_2: "Patience",
       aspect_1: "Sage",
       aspect_2: "Planner",
-      role: "Organizer",
       words: {
         bottom_line: "Rushed",
         action_step: "Prioritizing",
@@ -79,7 +75,6 @@ export const sampleData = {
       life_2: "Boundaries",
       aspect_1: "Lover",
       aspect_2: "Mediator",
-      role: "Partner",
       words: {
         bottom_line: "Unworthy",
         action_step: "Truth",
@@ -95,7 +90,6 @@ export const sampleData = {
       life_2: "Clarity",
       aspect_1: "Visionary",
       aspect_2: "Teacher",
-      role: "Guide",
       words: {
         bottom_line: "Confused",
         action_step: "Stillness",
@@ -136,13 +130,20 @@ export const sampleData = {
     integration: "Assertion"
   },
   module_3: {
-    provider: "Stability",
-    lover: "Connection",
-    friend: "Loyalty",
-    son_daughter: "Obedience",
-    father_mother: "Protector",
-    husband_wife: "Partner",
-    man_woman: "Authenticity",
+    provider_role: "Stability",
+    lover_role: "Connection",
+    friend_role: "Loyalty",
+    son_daughter_role: "Obedience",
+    father_mother_role: "Protector",
+    husband_wife_role: "Partner",
+    man_woman_role: "Authenticity",
+    provider_area: "Health",
+    lover_area: "Support",
+    friend_area: "Finance",
+    son_daughter_area: "Time",
+    father_mother_area: "Relationship",
+    husband_wife_area: "Wisdom",
+    man_woman_area: "Core",
     processed_emotion: "Grief",
     unprocessed_emotion: "Shame",
     dependent_pattern: "Fixing"
@@ -180,7 +181,6 @@ export const sampleData = {
     fragment: "Critic"
   },
   module_core: {
-    role: "Peacemaker",
     core_truth: "Belonging",
     life_purpose: "Empowerment",
     negativity: "Unworthy",

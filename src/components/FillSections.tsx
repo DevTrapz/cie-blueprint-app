@@ -459,37 +459,43 @@ export function FillBottomRight({
           <span className="p-4">
             <span className="font-strong">1 - Provider </span>
             <span>(Crown) </span>
-            <span className="font-blue-strong">{module_3.provider}</span>
+            <span className="font-blue-strong">{module_3.provider_role}</span>
           </span>
           <span className="p-4">
             <span className="font-strong">2 - Lover </span>
             <span>(3rd Eye) </span>
-            <span className="font-blue-strong">{module_3.lover}</span>
+            <span className="font-blue-strong">{module_3.lover_role}</span>
           </span>
           <span className="p-4">
             <span className="font-strong">3 - Friend </span>
             <span>(Throat) </span>
-            <span className="font-blue-strong">{module_3.friend}</span>
+            <span className="font-blue-strong">{module_3.friend_role}</span>
           </span>
           <span className="p-4">
             <span className="font-strong">4 - Son / Daughter </span>
             <span>(Heart) </span>
-            <span className="font-blue-strong">{module_3.son_daughter}</span>
+            <span className="font-blue-strong">
+              {module_3.son_daughter_role}
+            </span>
           </span>
           <span className="p-4">
             <span className="font-strong">5 - Father / Mother</span>
             <span>(Solar Plexus) </span>
-            <span className="font-blue-strong">{module_3.father_mother}</span>
+            <span className="font-blue-strong">
+              {module_3.father_mother_role}
+            </span>
           </span>
           <span className="p-4">
             <span className="font-strong">6 - Husban / Wife </span>
             <span>(Sacral) </span>
-            <span className="font-blue-strong">{module_3.husband_wife}</span>
+            <span className="font-blue-strong">
+              {module_3.husband_wife_role}
+            </span>
           </span>
           <span className="p-4">
             <span className="font-strong">7 - Man / Woman </span>
             <span>(Base) </span>
-            <span className="font-blue-strong">{module_3.man_woman}</span>
+            <span className="font-blue-strong">{module_3.man_woman_role}</span>
           </span>
         </div>
         <div className="flex-row-mid-center">
