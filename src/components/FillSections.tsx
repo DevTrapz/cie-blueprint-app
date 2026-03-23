@@ -2,13 +2,12 @@ import type {
   Module_1,
   Module_2,
   Module_3,
-  Module_4,
-  Module_5,
   Module_6,
   Module_6_Hard_Code,
   Module_7,
   Module_8,
   Module_9,
+  Module_Core,
 } from "../types/Modules.types";
 import type { TraitWords } from "../types/TraitWords.types";
 
@@ -152,28 +151,17 @@ export function FillCenterLeft({ module_6 }: CenterLeftType) {
 }
 
 interface CenterCenterType {
-  module_3: Module_3;
-  module_4: Module_4;
-  module_5: Module_5;
-  module_6: Module_6;
-  module_7: Module_7;
+  module_core: Module_Core;
   traits: TraitWords;
 }
-export function FillCenterCenter({
-  module_3,
-  module_4,
-  module_5,
-  module_6,
-  module_7,
-  traits,
-}: CenterCenterType) {
+export function FillCenterCenter({ module_core, traits }: CenterCenterType) {
   return (
     <div className="fill-center-center background-primary">
       <div className="center-center-sub-grid-1x2 background-black">
         <div className="flex-col-mid-center background-primary">
-          <span className="font-12">{module_7.core_date_range}</span>
-          <h3 className="font-18">{module_3.role}</h3>
-          <strong className="font-12">{module_5.life_purpose}</strong>
+          <span className="font-12">{module_core.core_date_range}</span>
+          <h3 className="font-18">{module_core.role}</h3>
+          <strong className="font-12">{module_core.life_purpose}</strong>
         </div>
         <div className="center-center-sub-grid-3x2 background-black">
           <div className="sub-cell-element sub-cell-top-color">
@@ -186,13 +174,13 @@ export function FillCenterCenter({
             {traits.core_attachment}
           </div>
           <div className="sub-cell-element sub-cell-left-color">
-            {module_4.core_truth}
+            {module_core.core_truth}
           </div>
           <div className="sub-cell-element sub-cell-mid-color">
-            {module_7.action_step}
+            {module_core.action_step}
           </div>
           <div className="sub-cell-element sub-cell-right-color">
-            {module_6.result}
+            {module_core.result}
           </div>
         </div>
       </div>
@@ -217,7 +205,7 @@ export function FillCenterCenter({
               width: "65%",
             }}
           >
-            {module_4.negativity}
+            {module_core.negativity}
           </span>
         </div>
         <div className="m-8">
@@ -240,7 +228,7 @@ export function FillCenterCenter({
               width: "65%",
             }}
           >
-            {module_5.practice}
+            {module_core.practice}
           </span>
         </div>
         <div className="m-8">
@@ -263,7 +251,7 @@ export function FillCenterCenter({
               width: "65%",
             }}
           >
-            {module_4.guide}
+            {module_core.guide}
           </span>
         </div>
         <div className="m-8">
@@ -287,7 +275,7 @@ export function FillCenterCenter({
               verticalAlign: "top",
             }}
           >
-            {module_4.circuit.join(", ")}
+            {module_core.circuit.join(", ")}
           </span>
         </div>
         <div className="m-8">
@@ -310,7 +298,7 @@ export function FillCenterCenter({
               width: "65%",
             }}
           >
-            {module_5.method}
+            {module_core.method}
           </span>
         </div>
       </div>

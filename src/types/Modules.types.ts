@@ -10,7 +10,6 @@ export interface Module_2 {
 }
 
 export interface Module_3 {
-  role: string
   provider: string
   lover: string
   friend: string
@@ -24,21 +23,14 @@ export interface Module_3 {
 }
 
 export interface Module_4 {
-  negativity: string
   method: string
   practice: string
-  guide: string
-  core_truth: string
-  circuit: [string, string, string, string]
 }
 
 export interface Module_5 {
-  life_purpose: string
   path_attachment: string
   path_unconscious_trait: string
   path: string
-  method: string
-  practice: string
 }
 
 export interface Module_6 {
@@ -52,7 +44,6 @@ export interface Module_6 {
   internal_wound_word: string
   internal_connetion: string
   internal_grounding: string
-  result: string
 }
 
 export interface Module_6_Hard_Code {
@@ -74,8 +65,6 @@ export interface Module_7 {
   alignment_statement_2: string
   balanced_sensuality: string
   alignment_statement_3: string
-  action_step: string
-  core_date_range: string
   bottom_center_date_range: string
 }
 
@@ -85,4 +74,18 @@ export interface Module_8 {
 
 export interface Module_9 {
   fragment: string,
+}
+
+export interface Module_Core {
+  role: string
+  core_truth: string
+  life_purpose: string
+  negativity: string
+  practice: string
+  method: string
+  guide: string
+  result: string
+  core_date_range: string
+  action_step: string
+  circuit: [string, string, string, string]
 }

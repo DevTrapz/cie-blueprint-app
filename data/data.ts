@@ -136,7 +136,6 @@ export const sampleData = {
     integration: "Assertion"
   },
   module_3: {
-    role: "Peacemaker",
     provider: "Stability",
     lover: "Connection",
     friend: "Loyalty",
@@ -148,26 +147,10 @@ export const sampleData = {
     unprocessed_emotion: "Shame",
     dependent_pattern: "Fixing"
   },
-  module_4: {
-    negativity: "Unworthy",
-    method: "Overworking",
-    practice: "Affirmation",
-    guide: "Heart",
-    core_truth: "Belonging",
-    circuit: [
-      "Rejection",
-      "Overgiving",
-      "Resentment",
-      "Withdrawal"
-    ]
-  },
   module_5: {
-    life_purpose: "Empowerment",
     path_attachment: "Recognition",
     path_unconscious_trait: "Perfectionism",
     path: "Leadership",
-    method: "Creativity",
-    practice: "Journaling"
   },
   module_6: {
     old_belief: "Abandonment",
@@ -180,7 +163,6 @@ export const sampleData = {
     internal_wound_word: "Defectiveness",
     internal_connetion: "Acceptance",
     internal_grounding: "Meditation",
-    result: "Peace",
   },
   module_7: {
     interal_block_left: "[M07 Internal Block (Left)]",
@@ -189,8 +171,6 @@ export const sampleData = {
     alignment_statement_2: "[M07 Alignment Statement 2]",
     interal_block_right: "[M07 External Block (Right)]",
     alignment_statement_3: "[M07 Alignment Statement 3]",
-    action_step: "Acceptance",
-    core_date_range: "date thru date",
     bottom_center_date_range: "date thru date"
   },
   module_8: {
@@ -198,6 +178,24 @@ export const sampleData = {
   },
   module_9: {
     fragment: "Critic"
+  },
+  module_core: {
+    role: "Peacemaker",
+    core_truth: "Belonging",
+    life_purpose: "Empowerment",
+    negativity: "Unworthy",
+    practice: "Affirmation",
+    method: "Overworking",
+    guide: "Heart",
+    result: "Peace",
+    core_date_range: "date thru date",
+    action_step: "Acceptance",
+    circuit: [
+      "Rejection",
+      "Overgiving",
+      "Resentment",
+      "Withdrawal"
+    ]
   }
 }
 

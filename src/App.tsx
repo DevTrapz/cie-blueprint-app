@@ -37,14 +37,7 @@ function App() {
         <FillTopCenter module_9={data.module_9} />
         <FillTopRight module_6={data.module_6} />
         <FillCenterLeft module_6={data.module_6} />
-        <FillCenterCenter
-          module_3={data.module_3}
-          module_4={data.module_4}
-          module_5={data.module_5}
-          module_6={data.module_6}
-          module_7={data.module_7}
-          traits={data.traits}
-        />
+        <FillCenterCenter module_core={data.module_core} traits={data.traits} />
         <FillCenterRight module_6={data.module_6} />
         <FillBottomCenter module_7={data.module_7} />
         <FillBottomLeft
