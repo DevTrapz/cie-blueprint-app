@@ -27,9 +27,11 @@ export default function ElementArea({ element }: props) {
                 ></img>
               </div>
               <div className="title-element">
-                <strong className="font-12">Mastered Element: </strong>
-                <h3>{element.type}</h3>
-                <strong className="font-12">{element.role}</strong>
+                <strong className="font-12">
+                  {element.is_mastered ? "Mastered" : "Missing"} Element:{" "}
+                </strong>
+                <h3>{element.role}</h3>
+                <strong className="font-12">{element.type}</strong>
               </div>
               <span className="width-20 font-14-center">
                 {element.description_hard_coded}

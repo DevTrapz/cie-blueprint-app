@@ -16,6 +16,7 @@ export interface ElementAreaPayload {
 
 export interface ElementAreaModel extends ElementAreaPayload {
   role: string,
+  is_mastered: boolean,
   description_hard_coded: string,
   image_url_icon_hard_coded: string,
   words: {

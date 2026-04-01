@@ -12,6 +12,7 @@ export interface Module_2 {
 }
 
 export interface Module_3 {
+  [key: string]: string | ElementTypes | undefined;
   provider_role: string
   lover_role: string
   friend_role: string
