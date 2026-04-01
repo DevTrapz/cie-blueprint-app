@@ -423,7 +423,7 @@ export function FillBottomCenter({ module_7 }: BottomCenterType) {
       <div className="flex-col-center-space-around background-primary bottom-center-element-primary">
         <span>Judgment 3:</span>
         <br />
-        <span className="font-16">Crossing free will (longevity) / FEAR</span>
+        <span className="font-16">Crossing free will (negativity) / FEAR</span>
       </div>
       <div className="flex-col-mid-center background-primary bottom-center-element-secondary">
         <span className="font-16">{module_7.balanced_sensuality}</span>
@@ -448,9 +448,9 @@ export function FillBottomRight({
     <div className="fill-bottom-right">
       <div className="bottom-right-sub-grid-2x1">
         <div className="flex-col-center-space-around bottom-right-element-primary">
-          <span>Judgement 1:</span>
+          <span>Judgement 2:</span>
           <span className="font-16">
-            Resisting Messages (Contrary Guide) / PAIN
+            Taking it personally (negative coping method) / STRUGGLE
           </span>
         </div>
       </div>
