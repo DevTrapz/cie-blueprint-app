@@ -22,9 +22,6 @@ export default function useData(): BlueprintModel | undefined {
   const transformData = useCallback((data: any): BlueprintModel => {
     data["image_url_cie_logo_hard_coded"] = hardCodedData.image_url_cie_logo_hard_coded
     data["image_url_chakra_hard_coded"] = hardCodedData.image_url_chakra_hard_coded
-    data["module_6"]["mental_spin_hard_coded"] = hardCodedData.module_6.mental_spin_hard_coded
-    data["module_6"]["spiritually_influenced_hard_coded"] = hardCodedData.module_6.spiritually_influenced_hard_coded
-    data["module_6"]["mental_action_hard_coded"] = hardCodedData.module_6.mental_action_hard_coded
     data["module_6"]["guilt_hard_coded"] = hardCodedData.module_6.guilt_hard_coded
     data["module_6"]["projected_guilt_hard_coded"] = hardCodedData.module_6.projected_guilt_hard_coded
     data["module_6"]["internal_step_1_hard_coded"] = hardCodedData.module_6.internal_step_1_hard_coded

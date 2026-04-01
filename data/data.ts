@@ -154,6 +154,9 @@ export const sampleData = {
     path: "Leadership",
   },
   module_6: {
+    mental_spin: "Grounding is imperative to proces the mental spin. In the metal spin, you will be replaying thoughts over and over, unable to choose your connection in Spirit.",
+    spiritually_influenced: "Difficult connecting because you're unwilling to hear and/or follow through with the message received.",
+    mental_action: "When challenged, look for Spiritually Influenced message & follow through consistently until you see results.",
     old_belief: "Abandonment",
     lesson_learned: "Growth",
     ego: "Controller",
@@ -235,9 +238,6 @@ export const hardCodedData = {
     }
   ],
   module_6: {
-    mental_spin_hard_coded: "Grounding is imperative to proces the mental spin. In the metal spin, you will be replaying thoughts over and over, unable to choose your connection in Spirit.",
-    spiritually_influenced_hard_coded: "Difficult connecting because you're unwilling to hear and/or follow through with the message received.",
-    mental_action_hard_coded: "When challenged, look for Spiritually Influenced message & follow through consistently until you see results.",
     guilt_hard_coded: "Judging yourself for an incident",
     projected_guilt_hard_coded: "Judging from others in an incident",
     internal_step_1_hard_coded: "Who is the person/incident you feel guilt with?",

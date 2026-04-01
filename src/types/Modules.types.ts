@@ -54,12 +54,12 @@ export interface Module_6 {
   internal_wound_word: string
   internal_connetion: string
   internal_grounding: string
+  mental_spin: string
+  spiritually_influenced: string
+  mental_action: string
 }
 
 export interface Module_6_Hard_Code {
-  mental_spin_hard_coded: string
-  spiritually_influenced_hard_coded: string
-  mental_action_hard_coded: string
   guilt_hard_coded: string
   projected_guilt_hard_coded: string
   internal_step_1_hard_coded: string
@@ -88,11 +88,12 @@ export interface Module_9 {
 
 export interface Module_Core {
   role: string
+  method: string
   core_truth: string
   life_purpose: string
   negativity: string
   practice: string
-  method: string
+  coping_method: string
   guide: string
   result: string
   core_date_range: string

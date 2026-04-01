@@ -98,17 +98,13 @@ export function FillTopRight({ module_6 }: TopRightType) {
   return (
     <div className="fill-top-right flex-col p-left-8 background-primary">
       <strong className="font-14">Mental Spin</strong>
-      <span className="font-12 p-bottom-8">
-        {module_6.mental_spin_hard_coded}
-      </span>
+      <span className="font-12 p-bottom-8">{module_6.mental_spin}</span>
       <strong className="font-14">Spiritually Influenced</strong>
       <span className="font-12 p-bottom-8">
-        {module_6.spiritually_influenced_hard_coded}
+        {module_6.spiritually_influenced}
       </span>
       <strong className="font-14">Mental Action</strong>
-      <span className="font-12 p-bottom-8">
-        {module_6.mental_action_hard_coded}
-      </span>
+      <span className="font-12 p-bottom-8">{module_6.mental_action}</span>
     </div>
   );
 }
