@@ -187,7 +187,7 @@ export function FillCenterCenter({ module_core, traits }: CenterCenterType) {
         </div>
       </div>
       <div className="flex-column font-12 p-10" style={{ flexGrow: 0 }}>
-        <div className="m-6">
+        <div className="m-4">
           <strong
             style={{
               width: "125px",
@@ -205,12 +205,13 @@ export function FillCenterCenter({ module_core, traits }: CenterCenterType) {
               marginLeft: "12px",
               display: "inline-block",
               width: "65%",
+              fontSize: 13,
             }}
           >
             {module_core.negativity}
           </span>
         </div>
-        <div className="m-6">
+        <div className="m-4">
           <strong
             style={{
               width: "125px",
@@ -228,12 +229,13 @@ export function FillCenterCenter({ module_core, traits }: CenterCenterType) {
               marginLeft: "12px",
               display: "inline-block",
               width: "65%",
+              fontSize: 13,
             }}
           >
             {module_core.method}
           </span>
         </div>
-        <div className="m-6">
+        <div className="m-4">
           <strong
             style={{
               width: "125px",
@@ -251,12 +253,13 @@ export function FillCenterCenter({ module_core, traits }: CenterCenterType) {
               marginLeft: "12px",
               display: "inline-block",
               width: "65%",
+              fontSize: 13,
             }}
           >
             {module_core.practice}
           </span>
         </div>
-        <div className="m-6">
+        <div className="m-4">
           <strong
             style={{
               width: "125px",
@@ -274,13 +277,14 @@ export function FillCenterCenter({ module_core, traits }: CenterCenterType) {
               marginLeft: "12px",
               display: "inline-block",
               width: "65%",
+              fontSize: 13,
             }}
           >
             {module_core.guide}
           </span>
         </div>
 
-        <div className="m-6">
+        <div className="m-4">
           <strong
             style={{
               width: "125px",
@@ -299,12 +303,13 @@ export function FillCenterCenter({ module_core, traits }: CenterCenterType) {
               display: "inline-block",
               width: "65%",
               verticalAlign: "top",
+              fontSize: 13,
             }}
           >
             {module_core.circuit.join(", ")}
           </span>
         </div>
-        <div className="m-6">
+        <div className="m-4">
           <strong
             style={{
               width: "125px",
@@ -322,6 +327,7 @@ export function FillCenterCenter({ module_core, traits }: CenterCenterType) {
               marginLeft: "12px",
               display: "inline-block",
               width: "65%",
+              fontSize: 13,
             }}
           >
             {module_core.coping_method}
