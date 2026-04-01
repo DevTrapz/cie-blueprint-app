@@ -160,8 +160,8 @@ export function FillCenterCenter({ module_core, traits }: CenterCenterType) {
       <div className="center-center-sub-grid-1x2 background-black">
         <div className="flex-col-mid-center background-primary">
           <span className="font-12">{module_core.core_date_range}</span>
-          <h3 className="font-18">{module_core.role}</h3>
-          <strong className="font-12">{module_core.life_purpose}</strong>
+          <h3 className="font-18">{module_core.life_purpose}</h3>
+          <strong className="font-12">{module_core.role}</strong>
         </div>
         <div className="center-center-sub-grid-3x2 background-black">
           <div className="sub-cell-element sub-cell-top-color">
