@@ -205,7 +205,7 @@ export const hardCodedData = {
   elements: [
     {
       type: "Health",
-      description_hard_coded: "Spiritual Connection",
+      description_hard_coded: "Health Issues or body image",
       image_url_icon_hard_coded: "https://i.ontraport.com/219391.3156d12d94857fd0cfa3d071bba38fa8.PNG",
     },
     {
