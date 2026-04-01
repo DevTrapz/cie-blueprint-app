@@ -154,8 +154,8 @@ export const sampleData = {
     path: "Leadership",
   },
   module_6: {
-    mental_spin: "Grounding is imperative to proces the mental spin. In the metal spin, you will be replaying thoughts over and over, unable to choose your connection in Spirit.",
-    spiritually_influenced: "Difficult connecting because you're unwilling to hear and/or follow through with the message received.",
+    mental_process: "Spiritually Influenced",
+    mental_process_definition: "Difficult connecting because you're unwilling to hear and/or follow through with the message received.",
     mental_action: "When challenged, look for Spiritually Influenced message & follow through consistently until you see results.",
     old_belief: "Abandonment",
     lesson_learned: "Growth",

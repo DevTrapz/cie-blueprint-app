@@ -54,8 +54,8 @@ export interface Module_6 {
   internal_wound_word: string
   internal_connetion: string
   internal_grounding: string
-  mental_spin: string
-  spiritually_influenced: string
+  mental_process: string
+  mental_process_definition: string
   mental_action: string
 }
 

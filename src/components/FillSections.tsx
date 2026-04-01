@@ -98,10 +98,14 @@ export function FillTopRight({ module_6 }: TopRightType) {
   return (
     <div className="fill-top-right flex-col p-left-8 background-primary">
       <strong className="font-14">Mental Spin</strong>
-      <span className="font-12 p-bottom-8">{module_6.mental_spin}</span>
-      <strong className="font-14">Spiritually Influenced</strong>
       <span className="font-12 p-bottom-8">
-        {module_6.spiritually_influenced}
+        Grounding is imperative to proces the mental spin. In the metal spin,
+        you will be replaying thoughts over and over, unable to choose your
+        connection in Spirit.
+      </span>
+      <strong className="font-14">{module_6.mental_process}</strong>
+      <span className="font-12 p-bottom-8">
+        {module_6.mental_process_definition}
       </span>
       <strong className="font-14">Mental Action</strong>
       <span className="font-12 p-bottom-8">{module_6.mental_action}</span>
