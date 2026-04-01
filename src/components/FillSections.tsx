@@ -169,23 +169,23 @@ export function FillCenterCenter({ module_core, traits }: CenterCenterType) {
             {module_core.role}
           </strong>
         </div>
-        <div className="center-center-sub-grid-3x2 background-black">
-          <div className="sub-cell-element sub-cell-top-color">
+        <div className="center-center-sub-grid-3x2 background-black font-13">
+          <div className="sub-cell-element sub-cell-top-color font-strong">
             {traits.core_conscious_trait}
           </div>
-          <div className="sub-cell-element sub-cell-top-color">
+          <div className="sub-cell-element sub-cell-top-color font-strong">
             {traits.core_unconscious_trait}
           </div>
-          <div className="sub-cell-element sub-cell-top-color">
+          <div className="sub-cell-element sub-cell-top-color font-strong">
             {traits.core_attachment}
           </div>
-          <div className="sub-cell-element sub-cell-left-color">
+          <div className="sub-cell-element sub-cell-left-color font-strong">
             {module_core.core_truth}
           </div>
-          <div className="sub-cell-element sub-cell-mid-color">
+          <div className="sub-cell-element sub-cell-mid-color font-strong">
             {module_core.action_step}
           </div>
-          <div className="sub-cell-element sub-cell-right-color">
+          <div className="sub-cell-element sub-cell-right-color font-strong">
             {module_core.result}
           </div>
         </div>
