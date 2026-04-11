@@ -83,10 +83,7 @@ export function FillTopCenter({ module_9 }: TopCenterType) {
           Fragment: <strong className="font-red">{module_9.fragment}</strong>
         </strong>
       </span>
-      <span className="font-12-mid">
-        Doing something that you enjoy in excess even if it has negative
-        consequences
-      </span>
+      <span className="font-12-mid">{module_9.fragment_desc}</span>
     </div>
   );
 }
@@ -171,13 +168,13 @@ export function FillCenterCenter({ module_core, traits }: CenterCenterType) {
         </div>
         <div className="center-center-sub-grid-3x2 background-black font-13">
           <div className="sub-cell-element sub-cell-top-color font-strong">
-            {traits.core_conscious_trait}
+            {traits.core_attachment}
           </div>
           <div className="sub-cell-element sub-cell-top-color font-strong">
             {traits.core_unconscious_trait}
           </div>
           <div className="sub-cell-element sub-cell-top-color font-strong">
-            {traits.core_attachment}
+            {traits.core_conscious_trait}
           </div>
           <div className="sub-cell-element sub-cell-left-color font-strong">
             {module_core.core_truth}

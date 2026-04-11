@@ -30,6 +30,8 @@ export interface Module_3 {
   processed_emotion: string
   unprocessed_emotion: string
   dependent_pattern: string
+  missing_element: string
+  mastered_element: string
 }
 
 export interface Module_4 {
@@ -84,6 +86,8 @@ export interface Module_8 {
 
 export interface Module_9 {
   fragment: string,
+  fragment_desc: string,
+
 }
 
 export interface Module_Core {

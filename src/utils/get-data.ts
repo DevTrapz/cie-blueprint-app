@@ -50,10 +50,14 @@ export default function useData(): BlueprintModel | undefined {
 
 
         const is_mastered: boolean = position.includes("top")
+        const missing_element = data["module_3"]["missing_element"];
+        const mastered_element = data["module_3"]["mastered_element"];
 
         return {
           ...element,
           position,
+          missing_element,
+          mastered_element,
           is_mastered,
           role,
           description_hard_coded: hardCodedElementMatch.description_hard_coded,

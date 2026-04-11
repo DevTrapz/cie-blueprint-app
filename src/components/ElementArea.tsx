@@ -28,10 +28,12 @@ export default function ElementArea({ element }: props) {
               </div>
               <div className="title-element">
                 <strong className="font-12">
-                  {element.is_mastered ? "Mastered" : "Missing"} Element:{" "}
+                  {element.is_mastered
+                    ? `Mastered Element: ${element.mastered_element}`
+                    : `Missing Element: ${element.missing_element}`}
                 </strong>
-                <h3>{element.role}</h3>
-                <strong className="font-12">{element.type}</strong>
+                <h3>{element.type}</h3>
+                <strong className="font-12">{element.role}</strong>
               </div>
               <span className="width-20 font-14-center">
                 {element.description_hard_coded}

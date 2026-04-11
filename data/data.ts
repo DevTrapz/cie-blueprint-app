@@ -146,7 +146,9 @@ export const sampleData = {
     man_woman_area: "Core",
     processed_emotion: "Grief",
     unprocessed_emotion: "Shame",
-    dependent_pattern: "Fixing"
+    dependent_pattern: "Fixing",
+    mastered_element: "Strong",
+    missing_element: "Weak"
   },
   module_5: {
     path_attachment: "Recognition",
@@ -181,7 +183,8 @@ export const sampleData = {
     empath: "Absorption"
   },
   module_9: {
-    fragment: "Critic"
+    fragment: "Critic",
+    fragment_desc: "Doing something that you enjoy in excess even if it has negative consequences"
   },
   module_core: {
     core_truth: "Belonging",
