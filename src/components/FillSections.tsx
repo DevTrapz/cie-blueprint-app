@@ -56,7 +56,7 @@ export function FillTopLeft({
               Using your <span className="font-pink">Action Step</span>
             </span>
             <span>
-              Clear the
+              Clears the
               <span className="font-red">
                 {" "}
                 Judgement (Negative Amcescral Pattern - NAP)
@@ -519,7 +519,7 @@ export function FillBottomRight({
             </span>
           </span>
           <span className="p-4">
-            <span className="font-strong">6 - Husban / Wife </span>
+            <span className="font-strong">6 - Husband / Wife </span>
             <span>(Sacral) </span>
             <span className="font-blue-strong">
               {module_3.husband_wife_role}
