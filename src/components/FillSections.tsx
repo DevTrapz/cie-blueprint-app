@@ -56,7 +56,7 @@ export function FillTopLeft({
               Using your <span className="font-pink">Action Step</span>
             </span>
             <span>
-              Clear the
+              Clears the
               <span className="font-red">
                 {" "}
                 Judgement (Negative Amcescral Pattern - NAP)
@@ -456,7 +456,7 @@ export function FillBottomCenter({ module_7 }: BottomCenterType) {
       <div className="flex-col-center-space-around background-primary bottom-center-element-primary">
         <span>Judgment 3:</span>
         <br />
-        <span className="font-16">Crossing free will (negativity) / FEAR</span>
+        <span className="font-16">Crossing free will (Negativity) / FEAR</span>
       </div>
       <div className="flex-col-mid-center background-primary bottom-center-element-secondary">
         <span className="font-16">{module_7.balanced_sensuality}</span>
@@ -483,7 +483,7 @@ export function FillBottomRight({
         <div className="flex-col-center-space-around bottom-right-element-primary">
           <span>Judgement 2:</span>
           <span className="font-16">
-            Taking it personally (negative coping method) / STRUGGLE
+            Taking it personally (Negative Coping Method) / STRUGGLE
           </span>
         </div>
       </div>
@@ -519,7 +519,7 @@ export function FillBottomRight({
             </span>
           </span>
           <span className="p-4">
-            <span className="font-strong">6 - Husban / Wife </span>
+            <span className="font-strong">6 - Husband / Wife </span>
             <span>(Sacral) </span>
             <span className="font-blue-strong">
               {module_3.husband_wife_role}
