@@ -59,7 +59,7 @@ export function FillTopLeft({
               Clears the
               <span className="font-red">
                 {" "}
-                Judgement (Negative Amcescral Pattern - NAP)
+                Judgment (Negative Amcescral Pattern - NAP)
               </span>
             </span>
             <span>
@@ -295,7 +295,7 @@ export function FillCenterCenter({ module_core, traits }: CenterCenterType) {
               verticalAlign: "top",
             }}
           >
-            Circut:{" "}
+            Circuit:{" "}
           </strong>
           <span
             className="font-blue-start-strong"
@@ -392,7 +392,7 @@ export function FillBottomLeft({
     <div className="fill-bottom-left background-primary">
       <div className="bottom-left-sub-grid-2x1">
         <div className="flex-col-center-space-around bottom-left-element-primary">
-          <span>Judgement 1:</span>
+          <span>Judgment 1:</span>
           <span className="font-16">
             Resisting Messages (Contrary Guide) / PAIN
           </span>
@@ -456,7 +456,7 @@ export function FillBottomCenter({ module_7 }: BottomCenterType) {
       <div className="flex-col-center-space-around background-primary bottom-center-element-primary">
         <span>Judgment 3:</span>
         <br />
-        <span className="font-16">Crossing free will (Negativity) / FEAR</span>
+        <span className="font-16">Crossing Free Will (Negativity) / FEAR</span>
       </div>
       <div className="flex-col-mid-center background-primary bottom-center-element-secondary">
         <span className="font-16">{module_7.balanced_sensuality}</span>
@@ -481,9 +481,9 @@ export function FillBottomRight({
     <div className="fill-bottom-right">
       <div className="bottom-right-sub-grid-2x1">
         <div className="flex-col-center-space-around bottom-right-element-primary">
-          <span>Judgement 2:</span>
+          <span>Judgment 2:</span>
           <span className="font-16">
-            Taking it personally (Negative Coping Method) / STRUGGLE
+            Taking It Personally (Negative Coping Method) / STRUGGLE
           </span>
         </div>
       </div>
@@ -547,7 +547,7 @@ export function FillBottomRight({
             {module_3.unprocessed_emotion}
           </span>
           <br />
-          <strong>Dependant Pattern</strong>
+          <strong>Dependent Pattern</strong>
           <span className="font-blue-strong">{module_3.dependent_pattern}</span>
         </div>
       </div>
