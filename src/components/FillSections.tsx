@@ -50,20 +50,20 @@ export function FillTopLeft({
           <div className="font-13 p-12">Formula: </div>
           <div className="flex-col-mid font-11">
             <span>
-              Confronting your <span className="font-blue">Bottom Line</span>
-            </span>
+  Confronting your <strong className="font-blue">Bottom Line</strong>
+</span>
             <span>
-              Using your <span className="font-pink">Action Step</span>
+              Using your <strong className="font-pink">Action Step</strong>
             </span>
             <span>
               Clears the
               <span className="font-red">
                 {" "}
-                Judgment (Negative Amcescral Pattern - NAP)
+                Judgment (Negative Ancescral Pattern - NAP)
               </span>
             </span>
             <span>
-              Producing your <span className="font-orange">Result!</span>
+              Producing your <strong className="font-orange">Result!</strong>
             </span>
           </div>
         </div>
