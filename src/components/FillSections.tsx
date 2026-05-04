@@ -59,7 +59,7 @@ export function FillTopLeft({
               Clears the
               <span className="font-red">
                 {" "}
-                Judgment (Negative Amcescral Pattern - NAP)
+                Judgment (Negative Ancescral Pattern - NAP)
               </span>
             </span>
             <span>
