@@ -9,11 +9,11 @@ const WHITE: ColorPair = { primary: "#ffffff", secondary: "#ffffff" };
 
 function resolveColor(value: string | undefined): ColorPair {
   switch (value?.trim().toLowerCase()) {
-    case "physically taken care of":
+    case "Physically Taken Care Of":
       return ORANGE;
-    case "emotionally expressed":
+    case "Emotionally Expressed":
       return GREEN;
-    case "spiritually influenced":
+    case "Spiritually Influenced":
       return PURPLE;
     default:
       return WHITE;
