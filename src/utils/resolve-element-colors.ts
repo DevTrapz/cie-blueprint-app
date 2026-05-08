@@ -8,26 +8,16 @@ const GREEN: ColorPair = { primary: "#71df66", secondary: "#aceca6" };
 const WHITE: ColorPair = { primary: "#ffffff", secondary: "#ffffff" };
 
 function resolveColor(value: string | undefined): ColorPair {
-  switch (value?.trim().toLowerCase()) {
-    case "Physically Taken Care Of":
-      return ORANGE;
-    case "Emotionally Expressed":
-      return GREEN;
-    case "Spiritually Influenced":
-      return PURPLE;
-    default:
-      return WHITE;
-  }
+  const normalized = value?.toLowerCase() ?? "";
+  if (normalized.includes("physically taken care of")) return ORANGE;
+  if (normalized.includes("emotionally expressed")) return GREEN;
+  if (normalized.includes("spiritually influenced")) return PURPLE;
+  return WHITE;
 }
 
 export function resolveElementColorVars(
   module_7: Module_7
 ): React.CSSProperties {
-  console.log("[M07 color inputs]", {
-    left: module_7.interal_block_left,
-    center: module_7.balanced_sensuality,
-    right: module_7.interal_block_right,
-  });
   const left = resolveColor(module_7.interal_block_left);
   const center = resolveColor(module_7.balanced_sensuality);
   const right = resolveColor(module_7.interal_block_right);
