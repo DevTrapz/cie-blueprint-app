@@ -13,6 +13,7 @@ import {
 import { ButtonDownload } from "./components/ButtonDownload.tsx";
 import ElementArea from "./components/ElementArea.tsx";
 import useData from "./utils/get-data.ts";
+import { resolveElementColorVars } from "./utils/resolve-element-colors.ts";
 
 function App() {
   const data = useData();
@@ -26,7 +27,11 @@ function App() {
         last_name={data.last_name}
         revision_date={data.revision_date}
       />
-      <div id="blueprint-grid" className="background-black m-8">
+  <div
+        id="blueprint-grid"
+        className="background-black m-8"
+        style={resolveElementColorVars(data.module_7)}
+        >        
         {renderElementAreas(data)}
         <FillTopLeft
           first_name={data.first_name}
