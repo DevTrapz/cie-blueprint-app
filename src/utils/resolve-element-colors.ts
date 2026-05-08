@@ -12,9 +12,9 @@ function resolveColor(value: string | undefined): ColorPair {
     case "physically taken care of":
       return ORANGE;
     case "emotionally expressed":
-      return PURPLE;
-    case "spiritually influenced":
       return GREEN;
+    case "spiritually influenced":
+      return PURPLE;
     default:
       return WHITE;
   }
@@ -23,6 +23,11 @@ function resolveColor(value: string | undefined): ColorPair {
 export function resolveElementColorVars(
   module_7: Module_7
 ): React.CSSProperties {
+  console.log("[M07 color inputs]", {
+    left: module_7.interal_block_left,
+    center: module_7.balanced_sensuality,
+    right: module_7.interal_block_right,
+  });
   const left = resolveColor(module_7.interal_block_left);
   const center = resolveColor(module_7.balanced_sensuality);
   const right = resolveColor(module_7.interal_block_right);
