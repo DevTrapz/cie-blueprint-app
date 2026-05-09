@@ -10,8 +10,8 @@ const WHITE: ColorPair = { primary: "#ffffff", secondary: "#ffffff" };
 function resolveColor(value: string | undefined): ColorPair {
   const normalized = value?.toLowerCase() ?? "";
   if (normalized.includes("physically taken care of")) return ORANGE;
-  if (normalized.includes("emotionally expressed")) return GREEN;
-  if (normalized.includes("spiritually influenced")) return PURPLE;
+  if (normalized.includes("emotionally expressed")) return PURPLE;
+  if (normalized.includes("spiritually influenced")) return GREEN;
   return WHITE;
 }
 
