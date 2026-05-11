@@ -57,10 +57,10 @@ export function FillTopLeft({
             </span>
             <span>
               Clears the
-              <span className="font-red">
+              <strong className="font-red">
                 {" "}
                 Judgment (Negative Ancestral Pattern - NAP)
-              </span>
+              </strong>
             </span>
             <span>
               Producing your <strong className="font-orange">Result!</strong>
@@ -398,51 +398,59 @@ export function FillBottomLeft({
           </span>
         </div>
       </div>
-      <div className="flex-row">
-        <div className="flex-col font-13 width-70">
-          <span className="p-4">
-            <span className="font-strong">Integration: </span>
-            <span className="font-blue-strong">{module_2.integration}</span>
-          </span>
-          <span className="p-4">
-            <span className="font-strong">Old Belief: </span>
-            <span className="font-blue-strong">{module_6.old_belief}</span>
-          </span>
-          <span className="p-4">
-            <span className="font-strong">Lesson Learned: </span>
-            <span className="font-blue-strong">{module_6.lesson_learned}</span>
-          </span>
-          <span className="p-4">
-            <span className="font-strong">Ego: </span>
-            <span className="font-blue-strong">{module_6.ego}</span>
-          </span>
-          <span className="p-4">
-            <span className="font-strong">Positive Ego Statement: </span>
-            <span className="font-14">{module_6.ego_statement}</span>
-          </span>
-          <span className="p-4 flex-item-end">
-            <span className="font-strong">Empath Sensitive: </span>
-            <span className="font-blue-strong">{module_8.empath}</span>
-          </span>
+      <div className="flex-col">
+        <div className="flex-row">
+          <div className="flex-col font-13 width-70">
+            <span className="p-4">
+              <span className="font-strong">Integration: </span>
+              <span className="font-blue-strong">{module_2.integration}</span>
+            </span>
+            <span className="p-4">
+              <span className="font-strong">Old Belief: </span>
+              <span className="font-blue-strong">{module_6.old_belief}</span>
+            </span>
+            <span className="p-4">
+              <span className="font-strong">Lesson Learned: </span>
+              <span className="font-blue-strong">{module_6.lesson_learned}</span>
+            </span>
+            <span className="p-4">
+              <span className="font-strong">Ego: </span>
+              <span className="font-blue-strong">{module_6.ego}</span>
+            </span>
+            <span className="p-4">
+              <span className="font-strong">Positive Ego Statement: </span>
+              <span className="font-14">{module_6.ego_statement}</span>
+            </span>
+            <span className="p-4 flex-item-end">
+              <span className="font-strong">Empath Sensitive: </span>
+              <span className="font-blue-strong">{module_8.empath}</span>
+            </span>
+          </div>
+          <div className="flex-col font-13 width-30">
+            <span className="p-4">
+              <span className="font-red-strong">T</span>ruth:{" "}
+              <span className="font-blue-strong">{module_1.truth}</span>
+            </span>
+            <span className="p-4">
+              <span className="font-red-strong">H</span>urt:{" "}
+              <span className="font-blue-strong">{module_1.hurt}</span>
+            </span>
+            <span className="p-4">
+              <span className="font-red-strong">A</span>nger:{" "}
+              <span className="font-blue-strong">{module_1.anger}</span>
+            </span>
+            <span className="p-4">
+              <span className="font-red-strong">N</span>umb:{" "}
+              <span className="font-blue-strong">{module_1.numb}</span>
+            </span>
+          </div>
         </div>
-        <div className="flex-col font-13 width-30">
-          <span className="p-4">
-            <span className="font-red-strong">T</span>ruth:{" "}
-            <span className="font-blue-strong">{module_1.truth}</span>
-          </span>
-          <span className="p-4">
-            <span className="font-red-strong">H</span>urt:{" "}
-            <span className="font-blue-strong">{module_1.hurt}</span>
-          </span>
-          <span className="p-4">
-            <span className="font-red-strong">A</span>nger:{" "}
-            <span className="font-blue-strong">{module_1.anger}</span>
-          </span>
-          <span className="p-4">
-            <span className="font-red-strong">N</span>umb:{" "}
-            <span className="font-blue-strong">{module_1.numb}</span>
-          </span>
-        </div>
+        <span
+          className="font-11"
+          style={{ textAlign: "center", padding: "4px", marginTop: "auto" }}
+        >
+          https://www.centerforintuitiveeducation.org/ | (602) - 621 - 4030 | 2026 Copyright &copy;
+        </span>
       </div>
     </div>
   );
@@ -459,7 +467,7 @@ export function FillBottomCenter({ module_7 }: BottomCenterType) {
         <span className="font-16">Crossing Free Will (Negativity) / FEAR</span>
       </div>
       <div className="flex-col-mid-center background-primary bottom-center-element-secondary">
-        <span className="font-16">{module_7.balanced_sensuality}</span>
+        <strong className="font-16">{module_7.balanced_sensuality}</strong>
         <span className="font-16">{module_7.bottom_center_date_range}</span>
         <span className="font-16" style={{ textAlign: "center" }}>
           {module_7.alignment_statement_2}
