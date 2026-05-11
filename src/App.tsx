@@ -59,9 +59,9 @@ function App() {
           <div className="flex-col-mid border-left-bottom-top">
             <div className="margin-left-rotate">
               <div className="flex-col-center">
-                <span style={{ width: "746.5px", textAlign: "center" }}>
+                <strong style={{ width: "746.5px", textAlign: "center" }}>
                   {data.module_7.interal_block_left}
-                </span>
+                </strong>
                 <span style={{ width: "746.5px", textAlign: "center" }}>
                   {data.module_7.alignment_statement_1}
                 </span>
@@ -77,9 +77,9 @@ function App() {
           <div className="flex-col-mid border-right-bottom-top">
             <div className="margin-right-rotate">
               <div className="flex-col-center">
-                <span style={{ width: "746.5px", textAlign: "center" }}>
+                <strong style={{ width: "746.5px", textAlign: "center" }}>
                   {data.module_7.interal_block_right}
-                </span>
+                </strong>
                 <span style={{ width: "746.5px", textAlign: "center" }}>
                   {data.module_7.alignment_statement_3}
                 </span>
