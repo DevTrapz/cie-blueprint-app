@@ -5,7 +5,10 @@ export default async function downloadAsPNG(id: string, fileName: string) {
   const element = document.getElementById(id);
   if (element == null) return console.log("download element not found");
 
-  const canvas = await html2canvas(element);
+  const canvas = await html2canvas(element, {
+    useCORS: true,
+    imageTimeout: 15000,
+  });
   const imgDataUrl = canvas.toDataURL("image/png");
 
   const link = document.createElement("a");
