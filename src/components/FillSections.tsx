@@ -156,7 +156,7 @@ export function FillCenterCenter({ module_core, traits }: CenterCenterType) {
     <div className="fill-center-center background-primary">
       <div className="center-center-sub-grid-1x2 background-black">
         <div className="flex-col-mid-center background-primary">
-          <span className="font-12" style={{ textAlign: "center" }}>
+          <span className="font-12 font-strong" style={{ textAlign: "center" }}>
             {module_core.core_date_range}
           </span>
           <h3 className="font-18" style={{ textAlign: "center" }}>
@@ -446,10 +446,10 @@ export function FillBottomLeft({
           </div>
         </div>
         <span
-          className="font-11"
+          className="font-16"
           style={{ textAlign: "center", padding: "4px", marginTop: "auto" }}
         >
-          https://www.centerforintuitiveeducation.org/ | (602) - 621 - 4030 | 2026 Copyright &copy;
+          <a href="https://www.centerforintuitiveeducation.org/">centerforintuitiveeducation.org/</a> | (602) - 621 - 4030 | 2026 Copyright &copy;
         </span>
       </div>
     </div>
@@ -468,7 +468,7 @@ export function FillBottomCenter({ module_7 }: BottomCenterType) {
       </div>
       <div className="flex-col-mid-center background-primary bottom-center-element-secondary">
         <strong className="font-16">{module_7.balanced_sensuality}</strong>
-        <span className="font-16">{module_7.bottom_center_date_range}</span>
+        <span className="font-16 font-strong">{module_7.bottom_center_date_range}</span>
         <span className="font-16" style={{ textAlign: "center" }}>
           {module_7.alignment_statement_2}
         </span>
