@@ -24,48 +24,59 @@ export function FillTopLeft({
   image_url_cie_logo,
 }: TopLeftType) {
   return (
-    <div className="fill-top-left flex-row background-primary">
-      <div className="flex-col-center width-20">
-        <img src={image_url_cie_logo} className="p-4 width-60"></img>
+    <div className="fill-top-left flex-col background-primary">
+      <div className="flex-row" style={{ alignItems: "center" }}>
+        <img
+          src={image_url_cie_logo}
+          className="p-4"
+          style={{ width: "60px" }}
+        ></img>
+        <span className="font-14">
+          <strong className="font-red">
+            Blueprint for:{" "}
+            <i>
+              {first_name} {last_name}
+            </i>
+          </strong>
+        </span>
       </div>
-      <div className="flex-col width-80">
-        <div className="flex-col">
-          <span className="font-14">
-            <strong className="font-red">
-              Blueprint for:{" "}
-              <i>
-                {first_name} {last_name}
-              </i>
+      <div className="flex-col" style={{ paddingLeft: "8px" }}>
+        <span className="font-15-red-montserrat">
+          Revised: <i>{revision_date}</i>
+        </span>
+        <br />
+        <strong className="font-14">
+          Judgment is wanting separation or feeling separate
+        </strong>
+      </div>
+      <div className="flex-row" style={{ marginTop: "auto" }}>
+        <div className="font-13 p-12">Formula: </div>
+        <div className="flex-col-mid font-11">
+          <span>
+            Confronting your{" "}
+            <strong className="font-blue" style={{ fontSize: "9px" }}>
+              Bottom Line
             </strong>
           </span>
-          <span className="font-15-red-montserrat">
-            Revised: <i>{revision_date}</i>
+          <span>
+            Using your{" "}
+            <strong className="font-pink" style={{ fontSize: "9px" }}>
+              Action Step
+            </strong>
           </span>
-          <br />
-          <strong className="font-14">
-            Judgment is wanting separation or feeling separate
-          </strong>
-        </div>
-        <div className="flex-row height-50">
-          <div className="font-13 p-12">Formula: </div>
-          <div className="flex-col-mid font-11">
-            <span>
-  Confronting your <strong className="font-blue">Bottom Line</strong>
-</span>
-            <span>
-              Using your <strong className="font-pink">Action Step</strong>
-            </span>
-            <span>
-              Clears the
-              <strong className="font-red">
-                {" "}
-                Judgment (Negative Ancestral Pattern - NAP)
-              </strong>
-            </span>
-            <span>
-              Producing your <strong className="font-orange">Result!</strong>
-            </span>
-          </div>
+          <span>
+            Clears the
+            <strong className="font-red" style={{ fontSize: "9px" }}>
+              {" "}
+              Judgment (Negative Ancestral Pattern - NAP)
+            </strong>
+          </span>
+          <span>
+            Producing your{" "}
+            <strong className="font-orange" style={{ fontSize: "9px" }}>
+              Result!
+            </strong>
+          </span>
         </div>
       </div>
     </div>
