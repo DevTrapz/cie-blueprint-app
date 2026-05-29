@@ -49,7 +49,10 @@ export function FillTopLeft({
           Judgment is wanting separation or feeling separate
         </strong>
       </div>
-      <div className="flex-row" style={{ marginTop: "auto" }}>
+      <div
+        className="flex-row"
+        style={{ marginTop: "auto", paddingBottom: "12px" }}
+      >
         <div className="font-13 p-12">Formula: </div>
         <div className="flex-col-mid font-11">
           <span>
