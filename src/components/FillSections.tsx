@@ -54,26 +54,26 @@ export function FillTopLeft({
         <div className="flex-col-mid font-11">
           <span>
             Confronting your{" "}
-            <strong className="font-blue" style={{ fontSize: "9px" }}>
+            <strong className="font-blue" style={{ fontSize: "12px" }}>
               Bottom Line
             </strong>
           </span>
           <span>
             Using your{" "}
-            <strong className="font-pink" style={{ fontSize: "9px" }}>
+            <strong className="font-pink" style={{ fontSize: "12px" }}>
               Action Step
             </strong>
           </span>
           <span>
             Clears the
-            <strong className="font-red" style={{ fontSize: "9px" }}>
+            <strong className="font-red" style={{ fontSize: "12px" }}>
               {" "}
               Judgment (Negative Ancestral Pattern - NAP)
             </strong>
           </span>
           <span>
             Producing your{" "}
-            <strong className="font-orange" style={{ fontSize: "9px" }}>
+            <strong className="font-orange" style={{ fontSize: "12px" }}>
               Result!
             </strong>
           </span>
