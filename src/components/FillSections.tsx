@@ -464,7 +464,7 @@ export function FillBottomLeft({
           className="font-14"
           style={{ textAlign: "left", padding: "4px", marginTop: "auto" }}
         >
-          CenterforIntuitiveEducation.org | (602)-621-4030 | 2026 Copyright &copy;
+          CenterforIntuitiveEducation.org | (602) 621-4030 | 2026 Copyright &copy;
         </span>
       </div>
     </div>
