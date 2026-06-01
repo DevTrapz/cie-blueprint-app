@@ -155,7 +155,9 @@ export function FillCenterLeft({ module_6 }: CenterLeftType) {
       </div>
       <div className="font-12-center">
         <span className="font-strong">Step 2: </span>
-        <span>{module_6.internal_step_2_hard_coded}</span>
+        <span style={{ whiteSpace: "pre-line" }}>
+          {module_6.internal_step_2_hard_coded}
+        </span>
       </div>
     </div>
   );
