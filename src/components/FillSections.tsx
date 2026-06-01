@@ -461,10 +461,10 @@ export function FillBottomLeft({
           </div>
         </div>
         <span
-          className="font-16"
-          style={{ textAlign: "center", padding: "4px", marginTop: "auto" }}
+          className="font-11"
+          style={{ textAlign: "left", padding: "4px", marginTop: "auto" }}
         >
-          <a href="https://www.centerforintuitiveeducation.org/">centerforintuitiveeducation.org/</a> | (602) - 621 - 4030 | 2026 Copyright &copy;
+          CenterforIntuitiveEducation.org | (602)-621-4030 | 2026 Copyright &copy;
         </span>
       </div>
     </div>
