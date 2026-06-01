@@ -462,9 +462,9 @@ export function FillBottomLeft({
         </div>
         <span
           className="font-11"
-          style={{ textAlign: "center", padding: "4px", marginTop: "auto" }}
+          style={{ textAlign: "left", padding: "4px", marginTop: "auto" }}
         >
-          https://www.centerforintuitiveeducation.org/ | (602) - 621 - 4030 | 2026 Copyright &copy;
+          CenterforIntuitiveEducation.org | (602)-621-4030 | 2026 Copyright &copy;
         </span>
       </div>
     </div>
