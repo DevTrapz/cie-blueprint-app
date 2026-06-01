@@ -31,20 +31,21 @@ export function FillTopLeft({
           className="p-4"
           style={{ width: "60px" }}
         ></img>
-        <span className="font-14">
-          <strong className="font-red">
-            Blueprint for:{" "}
-            <i>
-              {first_name} {last_name}
-            </i>
-          </strong>
-        </span>
+        <div className="flex-col">
+          <span className="font-14">
+            <strong className="font-red">
+              Blueprint for:{" "}
+              <i>
+                {first_name} {last_name}
+              </i>
+            </strong>
+          </span>
+          <span className="font-15-red-montserrat">
+            Revised: <i>{revision_date}</i>
+          </span>
+        </div>
       </div>
       <div className="flex-col" style={{ paddingLeft: "8px" }}>
-        <span className="font-15-red-montserrat">
-          Revised: <i>{revision_date}</i>
-        </span>
-        <br />
         <strong className="font-14">
           Judgment is wanting separation or feeling separate
         </strong>
