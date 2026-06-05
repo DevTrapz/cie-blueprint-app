@@ -111,7 +111,7 @@ export function FillTopRight({ module_6 }: TopRightType) {
     <div className="fill-top-right flex-col p-left-8 background-primary">
       <strong className="font-14">Mental Spin</strong>
       <span className="font-12 p-bottom-8">
-        Grounding is imperative to proces the mental spin. In the metal spin,
+        Grounding is imperative to process the mental spin. In the mental spin,
         you will be replaying thoughts over and over, unable to choose your
         connection in Spirit.
       </span>
